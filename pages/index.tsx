@@ -1,9 +1,16 @@
 import { Layout } from "components/common";
+import { Card } from "components/post";
 
 const Home = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Card
+        author="Kim"
+        date="August 6, 2022"
+        image=""
+        tags={["Marketing", "Next.js"]}
+        title="Hello world!"
+      />
     </div>
   );
 };
