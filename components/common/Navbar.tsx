@@ -1,41 +1,52 @@
+import { Container } from "components/ui";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { FC } from "react";
+
+interface INavItem {
+  href: string;
+  label: string;
+}
 
 const Navbar = () => {
+  const router = useRouter();
+
+  const isActive = (href: string) => router.pathname === href;
+
+  const NavItem = ({ label, href }: INavItem) => {
+    return (
+      <li>
+        <Link href={href}>
+          <a className={`${isActive(href) ? "text-red-500" : ""}`}>{label}</a>
+        </Link>
+      </li>
+    );
+  };
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
-        Navbar
-      </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
-          <li className="nav-item active">
-            <Link href="#">
-              <a className="nav-link">Blog</a>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link href="#">
-              <a className="nav-link">Gallery</a>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link href="#">
-              <a className="nav-link">About</a>
-            </Link>
-          </li>
-        </ul>
-      </div>
+    <nav className="py-2">
+      <Container className="flex justify-between">
+        <Link href="/">
+          <a className="text-2xl font-bold">Navbar</a>
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="flex gap-5 font-medium">
+            <NavItem label="Blogs" href="/blogs" />
+            <NavItem label="Works" href="/works" />
+            <NavItem label="About" href="/about" />
+          </ul>
+        </div>
+      </Container>
     </nav>
   );
 };

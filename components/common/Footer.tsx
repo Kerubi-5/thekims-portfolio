@@ -1,7 +1,11 @@
+import { Container } from "components/ui";
+
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; {new Date().getFullYear()} - KK</p>
+      <Container className="text-center">
+        <p>&copy; {new Date().getFullYear()} - KK</p>
+      </Container>
     </footer>
   );
 };

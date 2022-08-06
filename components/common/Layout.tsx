@@ -9,7 +9,7 @@ const Layout = ({ children }: ILayout) => {
   return (
     <>
       <Navbar />
-      <main className="max-w-7xl mx-auto">{children}</main>
+      <main className="max-w-7xl px-4 mx-auto min-h-screen">{children}</main>
       <Footer />
     </>
   );
