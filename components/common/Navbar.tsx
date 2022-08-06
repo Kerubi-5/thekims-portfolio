@@ -41,6 +41,7 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="flex gap-5 font-medium">
+            <NavItem label="Home" href="/" />
             <NavItem label="Blogs" href="/blogs" />
             <NavItem label="Works" href="/works" />
             <NavItem label="About" href="/about" />
