@@ -22,11 +22,12 @@ const Navbar = () => {
       </li>
     );
   };
+
   return (
     <nav className="py-2">
-      <Container className="flex justify-between">
+      <Container className="flex justify-between items-center">
         <Link href="/">
-          <a className="text-2xl font-bold">Navbar</a>
+          <a className="text-2xl font-bold">KK</a>
         </Link>
         <button
           className="navbar-toggler"
