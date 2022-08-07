@@ -45,7 +45,9 @@ const Card = ({ author, date, image, tags, title }: ICard) => {
           <Tags />
           <h3 className="text-3xl leading-tight font-bold my-2 ">{title}</h3>
           <div className="flex justify-between">
-            <p className="text-gray-500">{author}</p>
+            <p className="text-gray-500">
+              By <strong>{author}</strong>
+            </p>
             <p className="text-sm text-gray-500">{date}</p>
           </div>
         </a>
