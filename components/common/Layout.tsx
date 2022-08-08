@@ -33,7 +33,7 @@ const Layout = ({ children }: ILayout) => {
   const renderSocialLinks = () =>
     socialLinks.map((item) => (
       <a
-        className="flex justify-center items-center p-1 hover:bg-gray-700  w-10 h-10 rounded-lg"
+        className="flex justify-center items-center p-1 hover:bg-gray-500 transition-colors  w-10 h-10 rounded-lg"
         href={item.url}
         key={item.name}
         aria-label={item.name + " link"}
@@ -46,7 +46,7 @@ const Layout = ({ children }: ILayout) => {
     <>
       <Navbar />
       <main className="max-w-7xl px-4 mx-auto min-h-screen">
-        <div className="flex flex-col gap-1 fixed top-1/2 -translate-y-1/2 left-3">
+        <div className="flex flex-col gap-1 fixed top-1/2 -translate-y-1/2 right-3">
           {renderSocialLinks()}
         </div>
 
