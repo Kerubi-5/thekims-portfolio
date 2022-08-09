@@ -47,7 +47,6 @@ const Navbar = () => {
             <NavItem label="Home" href="/" />
             <NavItem label="Blogs" href="/blogs" />
             <NavItem label="Works" href="/works" />
-            <NavItem label="About" href="/about" />
           </ul>
         </div>
       </Container>
