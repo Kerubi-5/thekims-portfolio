@@ -44,8 +44,8 @@ const Home = () => {
 
   return (
     <div className="py-5">
-      <div className="flex items-center justify-center flex-wrap">
-        <div className="py-5 text-center">
+      <div className="flex items-center justify-center sm:gap-20 flex-wrap">
+        <div className="py-5 max-w-[450px] text-center">
           <h2 className="text-5xl bg-clip-text text-transparent primary-gradient font-bold mb-6">
             Hi, Im Kim.
             <br />A Web Developer

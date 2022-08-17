@@ -33,7 +33,7 @@ const Layout = ({ children }: ILayout) => {
   const renderSocialLinks = () =>
     socialLinks.map((item) => (
       <a
-        className="flex justify-center items-center p-1 hover:bg-gray-500 transition-colors  w-10 h-10 rounded-lg"
+        className="flex justify-center items-center p-1 hover:bg-blue-500  hover:-translate-y-1 transition  w-10 h-10 rounded-lg"
         href={item.url}
         key={item.name}
         aria-label={item.name + " link"}
@@ -46,12 +46,31 @@ const Layout = ({ children }: ILayout) => {
     <>
       <Navbar />
       <main className="max-w-7xl px-4 mx-auto min-h-screen">
-        <div className="flex flex-col gap-1 fixed top-1/2 -translate-y-1/2 right-3">
+        <aside className="flex flex-col gap-2 fixed left-3 bottom-0 side">
           {renderSocialLinks()}
-        </div>
-
+        </aside>
+        <aside className="flex flex-col gap-24 fixed -right-20 -bottom-10 side">
+          <a
+            href="mailto:jkim.querobines@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="rotate-90 py-3 hover:-translate-y-1 hover:text-blue-500 transition"
+          >
+            jkim.querobines@gmail.com
+          </a>
+        </aside>
         {children}
       </main>
+      <style jsx>{`
+        .side::after {
+          content: "";
+          display: block;
+          width: 1px;
+          height: 90px;
+          margin: 0px auto;
+          background-color: black;
+        }
+      `}</style>
       <Footer />
     </>
   );
