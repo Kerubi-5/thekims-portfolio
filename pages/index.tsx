@@ -1,4 +1,5 @@
 import { Layout } from "components/common";
+import { ExternalLink } from "components/icons";
 import { Card } from "components/post";
 import Link from "next/link";
 import { ReactNode } from "react";
@@ -18,12 +19,13 @@ type Section = {
 const Home = () => {
   const ServicesCard = ({ title, description, url }: ServiceCard) => {
     return (
-      <article className="py-5 px-10 text-center bg-gray-300 rounded-lg">
+      <article className="py-5 px-10 bg-gray-200 text-center rounded-lg flex flex-col justify-between">
         <h3 className="text-3xl font-medium mb-3">{title}</h3>
         <p>{description}</p>
         <Link href={url}>
-          <a className="p-3 block bg-blue-500 hover:bg-blue-600 transition-colors text-white rounded-lg mt-5">
-            Click to learn more
+          <a className="flex gap-2 justify-center p-3 bg-blue-500 hover:bg-blue-600 transition-colors text-white rounded-lg mt-5">
+            Click to learn more{" "}
+            <ExternalLink width="20px" height="20px" fill="white" />
           </a>
         </Link>
       </article>
@@ -32,7 +34,7 @@ const Home = () => {
 
   const Section = ({ title, description, children }: Section) => {
     return (
-      <section className="flex items-center justify-center flex-wrap">
+      <section className="flex flex-col justify-center items-center lg:mt-5">
         <div className="py-5 text-center">
           <h2 className="text-5xl bg-clip-text text-transparent primary-gradient font-bold mb-6">
             {title}
@@ -62,7 +64,7 @@ const Home = () => {
         title="My Services"
         description="I offer a wide range of services, from web development to game development."
       >
-        <div className="grid gap-3">
+        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
           <ServicesCard
             title="Web Design"
             description="I can create simple website designs with trending css designs and modern techniques"
