@@ -45,7 +45,7 @@ const Layout = ({ children }: ILayout) => {
   return (
     <>
       <Navbar />
-      <main className="max-w-7xl px-4 mx-auto min-h-screen">
+      <main className="max-w-7xl p-5 mx-auto min-h-screen">
         <aside className="flex flex-col gap-2 fixed left-3 bottom-0 side">
           {renderSocialLinks()}
         </aside>
