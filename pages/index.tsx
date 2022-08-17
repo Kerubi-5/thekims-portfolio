@@ -18,11 +18,13 @@ type Section = {
 const Home = () => {
   const ServicesCard = ({ title, description, url }: ServiceCard) => {
     return (
-      <article className="py-5 px-3 text-center bg-gray-300 rounded-lg">
+      <article className="py-5 px-10 text-center bg-gray-300 rounded-lg">
         <h3 className="text-3xl font-medium mb-3">{title}</h3>
         <p>{description}</p>
         <Link href={url}>
-          <a>Click to learn more</a>
+          <a className="p-3 block bg-blue-500 hover:bg-blue-600 transition-colors text-white rounded-lg mt-5">
+            Click to learn more
+          </a>
         </Link>
       </article>
     );
