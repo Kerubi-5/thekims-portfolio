@@ -65,7 +65,7 @@ const Layout = ({ children }: ILayout) => {
         .side::after {
           content: "";
           display: block;
-          width: 1px;
+          width: 1.5px;
           height: 90px;
           margin: 0px auto;
           background-color: black;
