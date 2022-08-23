@@ -34,7 +34,7 @@ const Home = () => {
 
   const Section = ({ title, description, children }: Section) => {
     return (
-      <section className="flex flex-col justify-center items-center lg:mt-5">
+      <section className="flex flex-col justify-center items-center mb-10 lg:mt-5">
         <div className="py-5 text-center">
           <h2 className="text-5xl bg-clip-text text-transparent primary-gradient font-bold mb-6">
             {title}
@@ -48,7 +48,7 @@ const Home = () => {
 
   return (
     <div className="py-5">
-      <div className="flex items-center justify-center sm:gap-20 flex-wrap">
+      <header className="flex items-center justify-center sm:gap-20 flex-wrap mb-10">
         <div className="py-5 max-w-[450px] text-center">
           <h2 className="text-5xl bg-clip-text text-transparent primary-gradient font-bold mb-6">
             Hi, Im Kim.
@@ -59,7 +59,7 @@ const Home = () => {
           </p>
         </div>
         <HeaderSVG />
-      </div>
+      </header>
       <Section
         title="My Services"
         description="I offer a wide range of services, from web development to game development."
@@ -76,10 +76,18 @@ const Home = () => {
             url="/web-development"
           />
           <ServicesCard
-            title="Tutoring"
-            description="I can help you with any programming problem you have."
-            url="/tutoring"
+            title="Web3"
+            description="I can also dabble in the newest technology trend which is creating decentralized applications"
+            url="/web3"
           />
+        </div>
+      </Section>
+      <Section
+        title="About Me"
+        description="The developer behind the creation of this website"
+      >
+        <div className="relative overflow-hidden h-full w-full">
+          <ThinkingSVG />
         </div>
       </Section>
     </div>
@@ -96,7 +104,7 @@ const HeaderSVG = () => {
       xmlns="http://www.w3.org/2000/svg"
       data-name="Layer 1"
       width="655"
-      height="413.67951"
+      height="250"
       viewBox="0 0 655 413.67951"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       className=""
@@ -376,8 +384,8 @@ const ThinkingSVG = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       data-name="Layer 1"
-      width="1019.4842"
-      height="436.68123"
+      width="100%"
+      height="250"
       viewBox="0 0 1019.4842 436.68123"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
