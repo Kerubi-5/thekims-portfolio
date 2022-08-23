@@ -3,7 +3,7 @@ import { ExternalLink } from "components/icons";
 import { Card } from "components/post";
 import Link from "next/link";
 import { ReactNode } from "react";
-
+import { Container } from "components/ui";
 type ServiceCard = {
   title: string;
   description: string;
@@ -47,7 +47,7 @@ const Home = () => {
   };
 
   return (
-    <div className="py-5">
+    <Container>
       <header className="flex items-center justify-center sm:gap-20 flex-wrap mb-10">
         <div className="py-5 max-w-[450px] text-center">
           <h2 className="text-5xl bg-clip-text text-transparent primary-gradient font-bold mb-6">
@@ -90,7 +90,7 @@ const Home = () => {
           <ThinkingSVG />
         </div>
       </Section>
-    </div>
+    </Container>
   );
 };
 
