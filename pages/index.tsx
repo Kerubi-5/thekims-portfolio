@@ -62,7 +62,7 @@ const Home = () => {
       </header>
       <Section
         title="My Services"
-        description="I offer a wide range of services, from web development to game development."
+        description="I offer a wide range of services, from web development to decentralized applications"
       >
         <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
           <ServicesCard
@@ -89,6 +89,16 @@ const Home = () => {
         <div className="relative overflow-hidden h-full w-full">
           <ThinkingSVG />
         </div>
+        <p className="prose lg:prose-xl my-5">
+          Hi my name is John Kim, and I use Kim as a nickname. I am a fullstack
+          web developer but mainly a front end developer. I am passionate about
+          video games, especially crpg games. I am collecting video games in a
+          video game digital distribution called steam.
+          <br />
+          <br />
+          If you would like to connect with my steam account here is my profile{" "}
+          <a href="https://steamcommunity.com/id/kerubi5">Kerubi</a>
+        </p>
       </Section>
     </Container>
   );
