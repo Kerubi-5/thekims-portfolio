@@ -15,7 +15,14 @@ export const getStaticProps = async () => {
 
 const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
-    <div>
+    <>
+      <header>
+        <h1 className="text-5xl bg-clip-text text-transparent primary-gradient font-bold mb-6 pb-2">
+          My Works
+        </h1>
+        <p>Here is the compilation of all my works up to date</p>
+      </header>
+
       {works.map((item) => {
         return (
           <div key={item.link}>
@@ -23,7 +30,7 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
           </div>
         );
       })}
-    </div>
+    </>
   );
 };
 
