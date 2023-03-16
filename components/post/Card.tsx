@@ -28,7 +28,6 @@ const Card = ({ author, date, image, tags, title }: ICard) => {
   return (
     <article className="p-3">
       <Link href="/blog">
-
         <div
           className="mb-3 relative rounded-lg overflow-hidden"
           aria-label="Featured Image"
@@ -37,8 +36,7 @@ const Card = ({ author, date, image, tags, title }: ICard) => {
             src="/assets/placeholder.svg"
             width={16}
             height={9}
-            layout="responsive"
-            objectFit="cover"
+            quality={20}
             alt="placeholder"
           />
         </div>
@@ -50,7 +48,6 @@ const Card = ({ author, date, image, tags, title }: ICard) => {
           </p>
           <p className="text-sm text-gray-500">{date}</p>
         </div>
-
       </Link>
     </article>
   );
