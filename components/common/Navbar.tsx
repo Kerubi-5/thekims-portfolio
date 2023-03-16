@@ -16,8 +16,8 @@ const Navbar = () => {
   const NavItem = ({ label, href }: INavItem) => {
     return (
       <li>
-        <Link href={href}>
-          <a className={`${isActive(href) ? "text-red-500" : ""}`}>{label}</a>
+        <Link href={href} className={`${isActive(href) ? "text-red-500" : ""}`}>
+          {label}
         </Link>
       </li>
     );
@@ -26,10 +26,12 @@ const Navbar = () => {
   return (
     <nav className="py-2">
       <Container className="flex justify-between items-center">
-        <Link href="/">
-          <a className="text-2xl font-bold primary-gradient bg-clip-text text-transparent">
+        <Link
+          href="/"
+          className="text-2xl font-bold primary-gradient bg-clip-text text-transparent">
+          
             KK
-          </a>
+          
         </Link>
         <button
           className="navbar-toggler"

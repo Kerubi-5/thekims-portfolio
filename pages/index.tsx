@@ -22,11 +22,12 @@ const Home = () => {
       <article className="py-5 px-10 bg-gray-200 text-center rounded-lg flex flex-col justify-between">
         <h3 className="text-3xl font-medium mb-3">{title}</h3>
         <p>{description}</p>
-        <Link href={url}>
-          <a className="flex gap-2 justify-center p-3 bg-blue-500 hover:bg-blue-600 transition-colors text-white rounded-lg mt-5">
-            Click to learn more{" "}
-            <ExternalLink width="20px" height="20px" fill="white" />
-          </a>
+        <Link
+          href={url}
+          className="flex gap-2 justify-center p-3 bg-blue-500 hover:bg-blue-600 transition-colors text-white rounded-lg mt-5"
+        >
+          Click to learn more
+          <ExternalLink width="20px" height="20px" fill="white" />
         </Link>
       </article>
     );
