@@ -46,10 +46,10 @@ const Layout = ({ children }: ILayout) => {
     <>
       <Navbar />
       <main className="max-w-7xl p-5 mx-auto min-h-screen">
-        <aside className="flex flex-col gap-2 fixed left-3 bottom-10 side">
+        <aside className="md:flex flex-col gap-2 fixed left-3 bottom-10 side hidden">
           {renderSocialLinks()}
         </aside>
-        <aside className="flex flex-col gap-24 fixed -right-20 bottom-0 side">
+        <aside className="md:flex flex-col gap-24 fixed -right-20 bottom-0 side hidden">
           <a
             href="mailto:jkim.querobines@gmail.com"
             rel="noopener noreferrer"
