@@ -50,38 +50,23 @@ const Home = () => {
   return (
     <Container>
       <header>
-        <div className="py-5">
-          <h1 className="text-5xl lg:text-7xl bg-clip-text text-transparent primary-gradient font-bold mb-6">
-            Hi, Im Kim.
-            <br />A Web Developer
+        <div className="py-10 lg:pb-[90px] lg:pt-[80px]">
+          <p className="text-lg text-gray-500 mb-5">Hi, my name is</p>
+          <h1 className="text-5xl lg:text-7xl bg-clip-text text-transparent primary-gradient font-bold mb-5 lg:mb-8">
+            John Kim A Querobines.
           </h1>
-          <p className="text-xl text-gray-500">
+          <h2 className="text-3xl lg:text-5xl bg-clip-text text-transparent primary-gradient font-bold mb-5 lg:mb-8">
+            a Professional Web Developer
+          </h2>
+          <p className="text-xl text-gray-500 max-w-[540px]">
             Im also a Registered Freelancer, Game Enthusiast, and many more...
+            I’m a web developer specializing in building (and occasionally
+            designing) exceptional digital experiences. Currently, I&apos;m,
+            currently mentoring at Refocus, to help other aspiring newbies in
+            the world of web development
           </p>
         </div>
       </header>
-      <Section
-        title="My Services"
-        description="I offer a wide range of services, from web development to decentralized applications"
-      >
-        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-          <ServicesCard
-            title="Web Design"
-            description="I can create simple website designs with trending css designs and modern techniques"
-            url="/web-design"
-          />
-          <ServicesCard
-            title="Web Development"
-            description="I build websites and web apps."
-            url="/web-development"
-          />
-          <ServicesCard
-            title="Web3"
-            description="I can also dabble in the newest technology trend which is creating decentralized applications"
-            url="/web3"
-          />
-        </div>
-      </Section>
       <Section
         title="About Me"
         description="The developer behind the creation of this website"
