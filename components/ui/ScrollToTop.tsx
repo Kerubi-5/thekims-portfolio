@@ -16,7 +16,6 @@ const ScrollToTop = () => {
     function toggleVisibility() {
       setIsVisible(window.pageYOffset > 300);
     }
-    console.log("I ran");
 
     window.addEventListener("scroll", toggleVisibility);
 
