@@ -1,14 +1,6 @@
 import { Layout } from "components/common";
-import { ExternalLink } from "components/icons";
-import { Card } from "components/post";
-import Link from "next/link";
 import { ReactNode } from "react";
 import { Container } from "components/ui";
-type ServiceCard = {
-  title: string;
-  description: string;
-  url: string;
-};
 
 type Section = {
   title: string;
@@ -17,30 +9,14 @@ type Section = {
 };
 
 const Home = () => {
-  const ServicesCard = ({ title, description, url }: ServiceCard) => {
-    return (
-      <article className="py-5 px-10 bg-gray-200 text-center rounded-lg flex flex-col justify-between">
-        <h3 className="text-3xl font-medium mb-3">{title}</h3>
-        <p>{description}</p>
-        <Link
-          href={url}
-          className="flex gap-2 justify-center p-3 bg-blue-500 hover:bg-blue-600 transition-colors text-white rounded-lg mt-5"
-        >
-          Click to learn more
-          <ExternalLink width="20px" height="20px" fill="white" />
-        </Link>
-      </article>
-    );
-  };
-
   const Section = ({ title, description, children }: Section) => {
     return (
       <section className="flex flex-col justify-center items-center mb-10 lg:mt-5">
         <div className="py-5 text-center">
-          <h2 className="text-5xl bg-clip-text text-transparent primary-gradient font-bold mb-6">
+          <h2 className="text-5xl text-purple-400 hover:text-gradient font-bold mb-6">
             {title}
           </h2>
-          <p className="text-xl text-gray-500">{description}</p>
+          <p className="text-lg text-gray-500">{description}</p>
         </div>
         {children}
       </section>
@@ -51,11 +27,11 @@ const Home = () => {
     <Container>
       <header>
         <div className="py-10 lg:pb-[90px] lg:pt-[80px]">
-          <p className="text-lg text-gray-500 mb-5">Hi, my name is</p>
-          <h1 className="text-5xl lg:text-7xl bg-clip-text text-transparent primary-gradient font-bold mb-5 lg:mb-8">
+          <p className="text-lg text-gray-500 mb-5 font-mono">Hi, my name is</p>
+          <h1 className="text-5xl lg:text-7xl text-gradient  font-bold mb-5 lg:mb-8 font-">
             John Kim A Querobines.
           </h1>
-          <h2 className="text-3xl lg:text-5xl bg-clip-text text-transparent primary-gradient font-bold mb-5 lg:mb-8">
+          <h2 className="text-3xl lg:text-5xl text-purple-400 hover:text-gradient font-bold mb-5 lg:mb-8">
             a Professional Web Developer
           </h2>
           <p className="text-xl text-gray-500 max-w-[540px]">
@@ -74,7 +50,7 @@ const Home = () => {
         <div className="relative overflow-hidden h-full w-full">
           <ThinkingSVG />
         </div>
-        <p className="prose lg:prose-xl my-10">
+        <p className="prose lg:prose-xl md:my-5 lg:my-10 dark:text-zinc-400">
           Hi my name is John Kim, and I use Kim as a nickname. I am a fullstack
           web developer but mainly a front end developer. I am passionate about
           video games, especially crpg games. I am collecting video games in a

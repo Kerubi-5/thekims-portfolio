@@ -2,7 +2,15 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { Github, Facebook, LinkedIn, Twitter } from "components/icons";
 import ScrollToTop from "components/ui/ScrollToTop";
+import { Open_Sans } from "next/font/google";
 
+const openSans = Open_Sans({
+  weight: ["400", "500", "700"],
+  style: ["normal"],
+  fallback: ["sans-serif"],
+  display: "swap",
+  subsets: ["latin"],
+});
 interface ILayout {
   children: React.ReactNode;
 }
@@ -34,7 +42,7 @@ const Layout = ({ children }: ILayout) => {
   const renderSocialLinks = () =>
     socialLinks.map((item) => (
       <a
-        className="flex justify-center items-center p-1 hover:bg-blue-500  hover:-translate-y-1 transition  w-10 h-10 rounded-lg"
+        className="flex justify-center items-center p-1 bg-purple-300 hover:bg-purple-500  hover:-translate-y-1 transition  w-10 h-10 rounded-lg"
         href={item.url}
         key={item.name}
         aria-label={item.name + " link"}
@@ -44,7 +52,7 @@ const Layout = ({ children }: ILayout) => {
     ));
 
   return (
-    <>
+    <div className={`${openSans.className} bg-[#f6f6f6] dark:bg-slate-900`}>
       <Navbar />
       <main className="max-w-7xl p-5 mx-auto min-h-screen">
         <aside className="md:flex flex-col gap-2 fixed left-3 bottom-10 side hidden">
@@ -75,7 +83,7 @@ const Layout = ({ children }: ILayout) => {
           background-color: black;
         }
       `}</style>
-    </>
+    </div>
   );
 };
 

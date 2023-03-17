@@ -21,8 +21,21 @@ const Footer = () => {
             hsla(255, 100%, 100%, 0.9) 50%
           );
           width: 100%;
-          height: 10rem;
+          height: 7rem;
           z-index: -1;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          footer::after {
+            background-image: linear-gradient(
+              180deg,
+              hsla(222.222, 47%, 11%, 0),
+              hsla(222.222, 47%, 11%, 1) 50%
+            );
+          }
+          footer p {
+            color: white;
+          }
         }
       `}</style>
     </footer>
