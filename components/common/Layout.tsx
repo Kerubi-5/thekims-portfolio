@@ -1,6 +1,7 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { Github, Facebook, LinkedIn, Twitter } from "components/icons";
+import ScrollToTop from "components/ui/ScrollToTop";
 
 interface ILayout {
   children: React.ReactNode;
@@ -61,6 +62,9 @@ const Layout = ({ children }: ILayout) => {
         </aside>
         {children}
       </main>
+
+      <Footer />
+      <ScrollToTop />
       <style jsx>{`
         .side::after {
           content: "";
@@ -71,7 +75,6 @@ const Layout = ({ children }: ILayout) => {
           background-color: black;
         }
       `}</style>
-      <Footer />
     </>
   );
 };

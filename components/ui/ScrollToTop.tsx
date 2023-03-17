@@ -1,0 +1,40 @@
+import { ScrollUp } from "components/icons";
+import { useEffect, useState } from "react";
+
+const ScrollToTop = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const isBrowser = () => typeof window !== undefined;
+
+  function scrollToTop() {
+    if (!isBrowser()) return;
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  useEffect(() => {
+    if (!isBrowser()) return;
+
+    function toggleVisibility() {
+      setIsVisible(window.pageYOffset > 300);
+    }
+    console.log("I ran");
+
+    window.addEventListener("scroll", toggleVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, [isVisible]);
+
+  return (
+    <button
+      className={`bottom-5 right-14 p-4 z-10 rounded-full shadow-xl bg-blue-400 hover:bg-blue-600 text-white hover:scale-105 transition-transform transition-colors ${
+        isVisible ? "fixed" : "hidden"
+      }`}
+      onClick={scrollToTop}
+    >
+      <ScrollUp />
+    </button>
+  );
+};
+
+export default ScrollToTop;
