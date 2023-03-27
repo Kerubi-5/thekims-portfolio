@@ -64,7 +64,7 @@ const Layout = ({ children }: ILayout) => {
             href="mailto:jkim.querobines@gmail.com"
             rel="noopener noreferrer"
             target="_blank"
-            className="rotate-90 py-3 hover:-translate-y-1 hover:text-blue-500 transition"
+            className="rotate-90 py-3 hover:-translate-y-1 hover:text-purple-400 transition"
           >
             jkim.querobines@gmail.com
           </a>
