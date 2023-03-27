@@ -1,9 +1,9 @@
 import { Container } from "components/ui";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { FC } from "react";
+import { AnchorHTMLAttributes, FC } from "react";
 
-interface INavItem {
+interface INavItem extends AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string;
   label: string;
 }
@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const isActive = (href: string) => router.pathname === href;
 
-  const NavItem = ({ label, href }: INavItem) => {
+  const NavItem = ({ label, href, ...rest }: INavItem) => {
     return (
       <li>
         <Link
@@ -21,6 +21,7 @@ const Navbar = () => {
           className={`${
             isActive(href) ? "dark:text-purple-500 text-purple-500" : ""
           } dark:text-white hover:text-purple-500 transition-colors`}
+          {...rest}
         >
           {label}
         </Link>
@@ -34,7 +35,7 @@ const Navbar = () => {
         <Link href="/" className="text-2xl font-bold text-purple-500">
           KK
         </Link>
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -44,11 +45,12 @@ const Navbar = () => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="flex gap-5 font-medium">
             <NavItem label="Home" href="/" />
             <NavItem label="Works" href="/works" />
+            <NavItem label="Resume" href="/assets/QUEROBINES_CV.pdf" download />
           </ul>
         </div>
       </Container>
