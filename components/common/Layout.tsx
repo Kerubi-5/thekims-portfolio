@@ -11,6 +11,7 @@ const openSans = Open_Sans({
   display: "swap",
   subsets: ["latin"],
 });
+
 interface ILayout {
   children: React.ReactNode;
 }
@@ -79,8 +80,18 @@ const Layout = ({ children }: ILayout) => {
           display: block;
           width: 1.5px;
           height: 200px;
-          margin: 0px auto;
+          margin: 0.5rem auto;
           background-color: black;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .side::after {
+            background-color: white;
+          }
+
+          .side {
+            color: white;
+          }
         }
       `}</style>
     </div>

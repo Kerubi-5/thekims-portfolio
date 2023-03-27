@@ -28,10 +28,10 @@ const Home = () => {
       <header>
         <div className="py-10 lg:pb-[90px] lg:pt-[80px]">
           <p className="text-lg text-gray-500 mb-5 font-mono">Hi, my name is</p>
-          <h1 className="text-5xl lg:text-7xl text-gradient  font-bold mb-5 lg:mb-8 font-">
+          <h1 className="text-5xl lg:text-7xl text-gradient pb-2 pl-2 font-bold mb-5 lg:mb-8 font-">
             John Kim A Querobines.
           </h1>
-          <h2 className="text-3xl lg:text-5xl text-purple-400 hover:text-gradient font-bold mb-5 lg:mb-8">
+          <h2 className="text-3xl lg:text-5xl text-purple-400 font-bold mb-5 lg:mb-8">
             a Professional Web Developer
           </h2>
           <p className="text-xl text-gray-500 max-w-[540px]">
