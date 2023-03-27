@@ -50,7 +50,7 @@ const Home = () => {
         <div className="relative overflow-hidden h-full w-full">
           <ThinkingSVG />
         </div>
-        <p className="prose lg:prose-xl md:my-5 lg:my-10 dark:text-zinc-400">
+        <p className="prose lg:prose-xl sm:my-5 lg:my-10 dark:text-zinc-400">
           Hi my name is John Kim, and I use Kim as a nickname. I am a fullstack
           web developer but mainly a front end developer. I am passionate about
           video games, especially crpg games. I am collecting video games in a
