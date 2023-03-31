@@ -1,13 +1,15 @@
 const getAllWorksQueries = `
     query {
-        worksCollection {
+        worksCollection(order: publishedDate_DESC) {
             items {
-            title
-            link
-            screenshot {
-                url
-                description
-            }
+                title
+                link
+                excerpt
+                screenshot {
+                    url
+                    description
+                }
+                tags
             }
         }
     }

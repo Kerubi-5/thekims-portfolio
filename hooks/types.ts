@@ -7,8 +7,10 @@ export interface WorkCollection {
 export interface Work {
   title: string;
   link: string;
+  excerpt: string;
   screenshot: {
     url: string;
     description: string;
   };
+  tags: [string];
 }
