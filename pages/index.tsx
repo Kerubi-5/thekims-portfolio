@@ -36,12 +36,12 @@ const Home = () => {
   }: WorkPlaces) => {
     return (
       <article>
-        <header className="mb-5">
+        <div className="mb-5">
           <h3 className="text-lg dark:text-zinc-200">
             {title} <span className="text-purple-400">@ {company}</span>
           </h3>
           <small className="text-zinc-300">{date}</small>
-        </header>
+        </div>
 
         <ul className="description">
           {description.map((desc, idx) => (
