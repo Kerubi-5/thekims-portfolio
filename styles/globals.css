@@ -2,7 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl text-purple-400 font-bold mb-6;
+  }
+
+  /* Gives anchor links cool underline hover effect and after hover effect */
+  p > a {
+    position: relative;
+    color: #c084fc !important;
+  }
+
+  p > a::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #c084fc;
+    transform: scale(0);
+    transform-origin: right top;
+    transition: transform 0.3s ease;
+  }
+
+  p > a:hover::after {
+    transform-origin: left;
+    transform: scale(1);
+  }
+}
+
 @layer components {
+  .headline {
+    @apply text-4xl mb-2 md:text-5xl md:mb-4 lg:text-7xl text-gradient pb-2 pl-1 font-bold lg:mb-8;
+  }
+
+  .subheadline {
+    @apply text-xl mb-4 md:text-3xl md:mb-6 lg:text-4xl text-purple-400 font-bold  lg:mb-8;
+  }
+
   .text-gradient {
     @apply bg-clip-text text-transparent primary-gradient transition-colors;
   }
