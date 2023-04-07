@@ -7,6 +7,20 @@
     @apply text-3xl md:text-4xl lg:text-5xl text-purple-400 font-bold mb-6;
   }
 
+  /* Gives list items a > icon before */
+  ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #c084fc;
+  }
+
   /* Gives anchor links cool underline hover effect and after hover effect */
   p > a {
     position: relative;

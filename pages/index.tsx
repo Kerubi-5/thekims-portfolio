@@ -8,6 +8,13 @@ type Section = {
   children: ReactNode;
 };
 
+type WorkPlaces = {
+  title: string;
+  company: string;
+  date: string;
+  description: string[];
+};
+
 const Home = () => {
   const Section = ({ title, description, children }: Section) => {
     return (
@@ -20,6 +27,45 @@ const Home = () => {
       </section>
     );
   };
+
+  const RenderWorkPlaces = ({
+    title,
+    company,
+    date,
+    description,
+  }: WorkPlaces) => {
+    return (
+      <article>
+        <header className="mb-5">
+          <h3 className="text-lg dark:text-zinc-200">
+            {title} <span className="text-purple-400">@ {company}</span>
+          </h3>
+          <small className="text-zinc-300">{date}</small>
+        </header>
+
+        <ul className="description">
+          {description.map((desc, idx) => (
+            <li className="text-zinc-400" key={idx}>
+              {desc}
+            </li>
+          ))}
+        </ul>
+      </article>
+    );
+  };
+
+  const workPlaces: WorkPlaces[] = [
+    {
+      title: "Frontend Developer",
+      company: "Pragtechnologies Corp",
+      date: "Aug - July 2022",
+      description: [
+        "Trained in using Next.js, React Typescript, Tailwind, Graphql and Shopify",
+        "Developed a Next.js project with Typescript and Shopify GraphQL together as a primary requirement to finish the internship programme",
+        "Collaborated with a team of 4 to create the prototype pragtech website using Next.js with Typescript and Gitlab as a source control for the team",
+      ],
+    },
+  ];
 
   return (
     <Container>
@@ -66,6 +112,9 @@ const Home = () => {
             profile <a href="https://steamcommunity.com/id/kerubi5">Kerubi</a>
           </p>
         </div>
+      </Section>
+      <Section title="Where I've worked" description="Places I've worked on">
+        {workPlaces.map(RenderWorkPlaces)}
       </Section>
     </Container>
   );
