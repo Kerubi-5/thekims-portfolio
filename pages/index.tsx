@@ -144,6 +144,31 @@ const Home = () => {
           {workPlaces.map(RenderWorkPlaces)}
         </div>
       </Section>
+      <Section title="What's the move?" description="Drop me a line!">
+        <p className="dark:text-zinc-200 text-lg mb-10">
+          While I am not actively seeking new opportunities at the moment, I
+          welcome any inquiries or friendly greetings in my inbox. If you have
+          any questions regarding technology or the website, feel free to drop
+          me a message, and I will do my best to respond promptly.
+        </p>
+        <a
+          href="mailto:johnkim.webdev@gmail.com"
+          className="border-purple-400 bg-transparent text-purple-400 border px-8 py-5 text-xl rounded-sm hover:bg-purple-400 transition-colors hover:text-white mb-3"
+        >
+          Hit me with a Hello!
+        </a>
+        {
+          //TODO: add alternative contact lines
+        }
+        {/* <small className="dark:text-zinc-400">
+          Or you can also contact me on these lines
+        </small>
+        <div className="socials">
+          <a href="tel:639274678658" className="text-purple-400">
+            <Phone />
+          </a>
+        </div> */}
+      </Section>
     </Container>
   );
 };
