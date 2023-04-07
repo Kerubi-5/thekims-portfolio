@@ -121,7 +121,7 @@ const Home = () => {
         <div className="relative overflow-hidden h-full w-full">
           <ThinkingSVG />
         </div>
-        <div className="dark:text-zinc-400 max-w-2xl sm:my-5 lg:my-10 space-y-4">
+        <div className="dark:text-zinc-400 sm:my-5 lg:my-10 space-y-4">
           <p>
             Hi! you can call me Kim. I am a fullstack web developer but mainly a
             front end developer. I graduated with latin honor &quot;Cum
