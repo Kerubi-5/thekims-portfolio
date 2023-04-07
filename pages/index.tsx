@@ -12,10 +12,8 @@ const Home = () => {
   const Section = ({ title, description, children }: Section) => {
     return (
       <section className="flex flex-col justify-center items-center mb-10 lg:mt-5">
-        <div className="py-5 text-center">
-          <h2 className="text-5xl text-purple-400 hover:text-gradient font-bold mb-6">
-            {title}
-          </h2>
+        <div className="sm:py-2 md:py-5 text-center">
+          <h2 className="hover:text-gradient">{title}</h2>
           <p className="text-lg text-gray-500">{description}</p>
         </div>
         {children}
@@ -27,19 +25,20 @@ const Home = () => {
     <Container>
       <header>
         <div className="py-10 lg:pb-[90px] lg:pt-[80px]">
-          <p className="text-lg text-gray-500 mb-5 font-mono">Hi, my name is</p>
-          <h1 className="text-5xl lg:text-7xl text-gradient pb-2 pl-1 font-bold mb-5 lg:mb-8 font-">
-            John Kim A Querobines.
-          </h1>
-          <h2 className="text-3xl lg:text-5xl text-purple-400 font-bold mb-5 lg:mb-8">
-            a Professional Web Developer
+          <p className="text-base text-gray-500 mb-5 font-mono">
+            Hi, my name is
+          </p>
+          <h1 className="headline">John Kim Querobines</h1>
+          <h2 className="subheadline">
+            I create high-performance websites with modern technologies and
+            practices.
           </h2>
-          <p className="text-xl text-gray-500 max-w-[540px]">
-            Im also a Registered Freelancer, Game Enthusiast, and many more...
+          <p className="text-base md:text-lg text-gray-500 max-w-[540px]">
+            I&apos;m a Registered Freelancer, Game Enthusiast, and many more...
             I’m a web developer specializing in building (and occasionally
-            designing) exceptional digital experiences. Currently, I&apos;m,
-            currently mentoring at Refocus, to help other aspiring newbies in
-            the world of web development
+            designing) exceptional digital experiences. I&apos;m currently
+            mentoring at Refocus, to help other aspiring newbies in the world of
+            web development
           </p>
         </div>
       </header>
@@ -50,16 +49,23 @@ const Home = () => {
         <div className="relative overflow-hidden h-full w-full">
           <ThinkingSVG />
         </div>
-        <p className="dark:text-zinc-400 max-w-2xl prose-a:underline sm:my-5 lg:my-10 ">
-          Hi my name is John Kim, and I use Kim as a nickname. I am a fullstack
-          web developer but mainly a front end developer. I am passionate about
-          video games, especially crpg games. I am collecting video games in a
-          video game digital distribution called steam.
-          <br />
-          <br />
-          If you would like to connect with my steam account here is my profile{" "}
-          <a href="https://steamcommunity.com/id/kerubi5">Kerubi</a>
-        </p>
+        <div className="dark:text-zinc-400 max-w-2xl sm:my-5 lg:my-10 space-y-4">
+          <p>
+            Hi! you can call me Kim. I am a fullstack web developer but mainly a
+            front end developer. I graduated with latin honor &quot;Cum
+            laude&quot; in Polytechnic University of the Philippines in 2022
+            with Bachelor of Science on Information Technology Degree.
+          </p>
+          <p>
+            I am passionate about video games, especially crpg games. I am
+            collecting video games in a video game digital distribution called
+            steam.
+          </p>
+          <p>
+            If you would like to connect with my steam account here is my
+            profile <a href="https://steamcommunity.com/id/kerubi5">Kerubi</a>
+          </p>
+        </div>
       </Section>
     </Container>
   );
