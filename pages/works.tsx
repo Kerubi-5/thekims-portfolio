@@ -15,7 +15,7 @@ export const getStaticProps = async () => {
 
 const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const WorkItem = () => {
-    return works.map((item) => {
+    return works.map((item, index) => {
       return (
         <li key={item.link}>
           <article className="article p-5 bg-slate-200 dark:bg-slate-800 rounded-sm space-y-2">
@@ -46,6 +46,10 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
                 src={item.screenshot.url}
                 fill={true}
                 alt={item.screenshot.description}
+                sizes="(max-width: 1024px) 533.33px, 20vw"
+                priority={index === 1}
+                placeholder="blur"
+                blurDataURL={`${item.screenshot.url}?lqip`}
               />
             </div>
           </article>
