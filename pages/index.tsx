@@ -35,7 +35,7 @@ const Home = () => {
     description,
   }: WorkPlaces) => {
     return (
-      <article>
+      <article key={title + date}>
         <div className="mb-5">
           <h3 className="text-lg dark:text-zinc-200">
             {title}{" "}
@@ -52,7 +52,7 @@ const Home = () => {
 
         <ul className="list">
           {description.map((desc, idx) => (
-            <li className="text-zinc-400" key={idx}>
+            <li key={idx} className="text-zinc-400">
               {desc}
             </li>
           ))}
