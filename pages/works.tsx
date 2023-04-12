@@ -1,7 +1,7 @@
-import { Layout } from "components/common";
-import { getAllWorks } from "hooks/work/get-all-works";
-import { InferGetStaticPropsType } from "next";
-import Image from "next/image";
+import { Layout } from 'components/common';
+import { getAllWorks } from 'hooks/work/get-all-works';
+import { InferGetStaticPropsType } from 'next';
+import Image from 'next/image';
 
 export const getStaticProps = async () => {
   const works = await getAllWorks();
@@ -17,8 +17,20 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const WorkItem = () => {
     return works.map((item, index) => {
       return (
-        <li key={item.link}>
-          <article className="article p-5 bg-slate-200 dark:bg-slate-800 rounded-sm space-y-2">
+        <li key={item.link} className="break-inside-avoid">
+          <article className="p-5 bg-slate-200 dark:bg-slate-800 rounded-sm space-y-2">
+            <div className="hidden md:block md:h-[200px]  lg:h-[250px] max-w-[533.33px] relative">
+              <Image
+                src={item.screenshot.url}
+                fill={true}
+                alt={item.screenshot.description}
+                sizes="(max-width: 1024px) 533.33px, 20vw"
+                priority={index === 1}
+                placeholder="blur"
+                blurDataURL={`${item.screenshot.url}?lqip`}
+                className="object-cover"
+              />
+            </div>
             <div className="details max-w-[600px]">
               <h3 className="text-purple-400 text-xl font-bold">
                 {item.title}
@@ -26,7 +38,6 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
               {item.excerpt && (
                 <p className="prose dark:prose-invert">{item.excerpt}</p>
               )}
-
               {item.tags?.length > 0 && (
                 <ul className="tags flex gap-3 my-2">
                   {item.tags.map((tag) => (
@@ -40,26 +51,7 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
                 </ul>
               )}
             </div>
-
-            <div className="hidden lg:block h-[300px] min-w-[533.33px] relative">
-              <Image
-                src={item.screenshot.url}
-                fill={true}
-                alt={item.screenshot.description}
-                sizes="(max-width: 1024px) 533.33px, 20vw"
-                priority={index === 1}
-                placeholder="blur"
-                blurDataURL={`${item.screenshot.url}?lqip`}
-              />
-            </div>
           </article>
-          <style jsx>{`
-            .article {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
-          `}</style>
         </li>
       );
     });
@@ -76,7 +68,9 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
         </p>
       </div>
       <section>
-        <ul className="grid gap-5">{WorkItem()}</ul>
+        <ul className="md:columns-2 lg:columns-3 space-y-5 gap-5">
+          {WorkItem()}
+        </ul>
       </section>
     </>
   );
