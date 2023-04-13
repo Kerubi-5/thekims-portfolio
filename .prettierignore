@@ -1,2 +1,8 @@
 node_modules
-.next
+.nextnode_modules
+**/.next/**
+**/_next/**
+**/dist/**
+**/__tmp__/**
+lerna.json
+.github

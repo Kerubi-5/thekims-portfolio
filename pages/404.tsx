@@ -1,10 +1,24 @@
 import { Layout } from "components/common";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const NotFound = () => {
   const router = useRouter();
   return (
     <div className=" flex flex-col  h-screen justify-center items-center gap-5">
+      <Head>
+        <title>
+          Uh-oh! Looks like you stumbled into the abyss. Let&apos;s get you back
+          on track!
+        </title>
+        <meta
+          name="description"
+          content="Oops, you've landed on a black hole! Fear not, TheKims.dev has
+          got your back. Let's redirect you to where you need to go, and
+          unleash your online potential."
+        />
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <svg
         className="emoji-404 "
         enableBackground="new 0 0 226 249.135"

@@ -1,4 +1,4 @@
-import { Layout } from "components/common";
+import { Layout, SEOHeader } from "components/common";
 import { ReactNode } from "react";
 import { Container } from "components/ui";
 
@@ -95,6 +95,7 @@ const Home = () => {
 
   return (
     <Container>
+      <SEOHeader />
       <header>
         <div className="py-10 lg:pb-[90px] lg:pt-[80px]">
           <p className="text-base text-gray-500 mb-5 font-mono">

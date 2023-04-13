@@ -6,7 +6,7 @@ const nextConfig = withOptimizedImages({
   swcMinify: true,
   images: {
     domains: ["images.ctfassets.net"],
-    format: ["image/avif", "image/webp"],
+    formats: ["image/avif", "image/webp"],
   },
 });
 

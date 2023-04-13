@@ -33,7 +33,7 @@ const Navbar = () => {
     <nav className="py-2">
       <Container className="flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-purple-500">
-          KK
+          TK
         </Link>
         {/* <button
           className="navbar-toggler"
