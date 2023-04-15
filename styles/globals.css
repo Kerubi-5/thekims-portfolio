@@ -10,7 +10,8 @@
   /* Gives anchor links cool underline hover effect and after hover effect */
   p > a {
     position: relative;
-    color: #c084fc !important;
+    color: #9333ea;
+    font-weight: 500;
   }
 
   p > a::after {
@@ -20,7 +21,7 @@
     content: "";
     width: 100%;
     height: 1px;
-    background: #c084fc;
+    background: #9333ea;
     transform: scale(0);
     transform-origin: right top;
     transition: transform 0.3s ease;
@@ -28,11 +29,11 @@
 
   @media (prefers-color-scheme: dark) {
     p > a {
-      color: #9333ea;
+      color: #c084fc;
     }
 
     p > a::after {
-      background: #9333ea;
+      background: #c084fc;
     }
   }
 
