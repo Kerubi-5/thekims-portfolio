@@ -56,10 +56,10 @@ const Layout = ({ children }: ILayout) => {
     <div className={`${openSans.className} bg-[#f6f6f6] dark:bg-slate-900`}>
       <Navbar />
       <main className="max-w-7xl p-5 mx-auto min-h-screen">
-        <aside className="md:flex flex-col gap-2 fixed left-4 bottom-10 side hidden">
+        <aside className="z-50 md:flex flex-col gap-2 fixed left-4 bottom-10 side hidden">
           {renderSocialLinks()}
         </aside>
-        <aside className="md:flex flex-col gap-24 fixed -right-20 bottom-0 side hidden">
+        <aside className="z-50 md:flex flex-col gap-24 fixed -right-20 bottom-0 side hidden">
           <a
             href="mailto:jkim.querobines@gmail.com"
             rel="noopener noreferrer"
