@@ -2,6 +2,10 @@
 const withOptimizedImages = require("next-optimized-images");
 
 const nextConfig = withOptimizedImages({
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
   reactStrictMode: true,
   swcMinify: true,
   images: {
