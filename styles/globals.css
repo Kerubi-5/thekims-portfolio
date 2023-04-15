@@ -4,7 +4,7 @@
 
 @layer base {
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl text-purple-400 font-bold mb-6;
+    @apply text-3xl md:text-4xl lg:text-5xl text-purple-600 dark:text-purple-400 font-bold mb-6;
   }
 
   /* Gives anchor links cool underline hover effect and after hover effect */
@@ -38,7 +38,7 @@
   }
 
   .subheadline {
-    @apply text-xl mb-4 md:text-3xl md:mb-6 lg:text-4xl text-purple-400 font-bold  lg:mb-8;
+    @apply text-xl mb-4 md:text-3xl md:mb-6 lg:text-4xl text-purple-600 dark:text-purple-400 font-bold  lg:mb-8;
   }
 
   .text-gradient {

@@ -32,7 +32,7 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
               />
             </div>
             <div className="details max-w-[600px]">
-              <h3 className="text-purple-400 text-xl font-bold">
+              <h3 className="text-purple-600 text-xl font-bold">
                 {item.title}
               </h3>
               {item.excerpt && (
