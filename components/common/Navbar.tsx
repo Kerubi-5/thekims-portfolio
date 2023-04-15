@@ -2,6 +2,7 @@ import { Container } from "components/ui";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { AnchorHTMLAttributes, FC } from "react";
+import Image from "next/image";
 
 interface INavItem extends AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string;
@@ -33,7 +34,13 @@ const Navbar = () => {
     <nav className="py-2">
       <Container className="flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-purple-500">
-          TK
+          <Image
+            src="/assets/logo.png"
+            alt="The Kims Logo Image"
+            width={30}
+            height={30}
+            priority={true}
+          />
         </Link>
         {/* <button
           className="navbar-toggler"
