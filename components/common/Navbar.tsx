@@ -20,8 +20,8 @@ const Navbar = () => {
         <Link
           href={href}
           className={`${
-            isActive(href) ? "dark:text-purple-500 text-purple-500" : ""
-          } dark:text-white hover:text-purple-500 transition-colors`}
+            isActive(href) ? "dark:text-purple- 500 text-purple-600" : ""
+          } dark:text-white  dark:hover:text-purple-500 hover:text-purple-600 transition-colors font-semibold`}
           {...rest}
         >
           {label}
@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <nav className="py-2">
       <Container className="flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-purple-500">
+        <Link href="/">
           <Image
             src="/assets/logo.png"
             alt="The Kims Logo Image"

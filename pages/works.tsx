@@ -1,4 +1,5 @@
 import { Layout, SEOHeader } from "components/common";
+import { Container } from "components/ui";
 import { getAllWorks } from "hooks/work/get-all-works";
 import { InferGetStaticPropsType } from "next";
 import Image from "next/image";
@@ -32,7 +33,7 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
               />
             </div>
             <div className="details max-w-[600px]">
-              <h3 className="text-purple-400 text-xl font-bold">
+              <h3 className="text-purple-600 dark:text-purple-400 text-xl font-bold">
                 {item.title}
               </h3>
               {item.excerpt && (
@@ -58,7 +59,7 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
   };
 
   return (
-    <>
+    <Container>
       <div className="mb-6">
         <SEOHeader
           title="The Projects of John Kim Querobines"
@@ -67,7 +68,7 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
         <h1 className="text-5xl bg-clip-text text-transparent primary-gradient font-bold pb-2">
           My Works
         </h1>
-        <p className="font-mono text-zinc-500">
+        <p className="font-mono dark:text-gray-400">
           Here is the compilation of all my works up to date
         </p>
       </div>
@@ -76,7 +77,7 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
           {WorkItem()}
         </ul>
       </section>
-    </>
+    </Container>
   );
 };
 

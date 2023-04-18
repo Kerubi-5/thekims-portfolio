@@ -4,13 +4,14 @@
 
 @layer base {
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl text-purple-400 font-bold mb-6;
+    @apply text-3xl md:text-4xl lg:text-5xl text-purple-600 dark:text-purple-400 font-bold mb-6;
   }
 
   /* Gives anchor links cool underline hover effect and after hover effect */
   p > a {
     position: relative;
-    color: #c084fc !important;
+    color: #9333ea;
+    font-weight: 500;
   }
 
   p > a::after {
@@ -20,10 +21,20 @@
     content: "";
     width: 100%;
     height: 1px;
-    background: #c084fc;
+    background: #9333ea;
     transform: scale(0);
     transform-origin: right top;
     transition: transform 0.3s ease;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    p > a {
+      color: #c084fc;
+    }
+
+    p > a::after {
+      background: #c084fc;
+    }
   }
 
   p > a:hover::after {
@@ -38,7 +49,7 @@
   }
 
   .subheadline {
-    @apply text-xl mb-4 md:text-3xl md:mb-6 lg:text-4xl text-purple-400 font-bold  lg:mb-8;
+    @apply text-xl mb-4 md:text-3xl md:mb-6 lg:text-4xl text-purple-600 dark:text-purple-400 font-bold  lg:mb-8;
   }
 
   .text-gradient {

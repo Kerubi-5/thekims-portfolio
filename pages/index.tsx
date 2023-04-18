@@ -21,7 +21,9 @@ const Home = () => {
       <section className="flex flex-col justify-center items-center mb-10 lg:mt-5 max-w-2xl m-auto">
         <div className="sm:py-2 md:py-5 text-center">
           <h2 className="hover:text-gradient">{title}</h2>
-          <p className="text-lg text-gray-500">{description}</p>
+          <p className="text-lg text-gray-600 dark:text-gray-400">
+            {description}
+          </p>
         </div>
         {children}
       </section>
@@ -37,22 +39,22 @@ const Home = () => {
     return (
       <article key={title + date}>
         <div className="mb-5">
-          <h3 className="text-lg dark:text-zinc-200">
+          <h3 className="text-lg dark:text-zinc-200 font-medium">
             {title}{" "}
             <span
               title="Company"
               aria-label="Company"
-              className="text-purple-400"
+              className="text-purple-700 dark:text-purple-400"
             >
               @{company}
             </span>
           </h3>
-          <small className="text-zinc-300">{date}</small>
+          <small className="dark:text-zinc-300">{date}</small>
         </div>
 
         <ul className="list">
           {description.map((desc, idx) => (
-            <li key={idx} className="text-zinc-400">
+            <li key={idx} className="dark:text-zinc-400">
               {desc}
             </li>
           ))}
@@ -98,7 +100,7 @@ const Home = () => {
       <SEOHeader />
       <header>
         <div className="py-10 lg:pb-[90px] lg:pt-[80px]">
-          <p className="text-base text-gray-500 mb-5 font-mono">
+          <p className="text-base text-gray-700 dark:text-gray-400 mb-5 font-mono">
             Hi, my name is
           </p>
           <h1 className="headline">John Kim Querobines</h1>
@@ -106,7 +108,7 @@ const Home = () => {
             I create high-performance websites with modern technologies and
             practices.
           </h2>
-          <p className="text-base md:text-lg text-gray-500 max-w-[540px]">
+          <p className="text-base md:text-lg text-gray-700 dark:text-gray-400 max-w-[540px]">
             I&apos;m a Registered Freelancer, Game Enthusiast, and many more...
             I’m a web developer specializing in building (and occasionally
             designing) exceptional digital experiences. I&apos;m currently
@@ -154,7 +156,7 @@ const Home = () => {
         </p>
         <a
           href="mailto:johnkim.webdev@gmail.com"
-          className="border-purple-400 bg-transparent text-purple-400 border px-8 py-5 text-xl rounded-sm hover:bg-purple-400 transition-colors hover:text-white mb-3"
+          className="border-purple-600 dark:border-purple-400 bg-transparent text-purple-600 dark:text-purple-400 border px-8 py-5 text-xl rounded-sm hover:bg-purple-600 dark:hover:bg-purple-400 transition-colors hover:text-white mb-3"
         >
           Hit me with a Hello!
         </a>
