@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { FC, ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 type Props = {
   children: ReactNode | ReactNode[];
@@ -17,6 +18,7 @@ function MyApp({
   return (
     <Layout>
       <Component {...pageProps} />
+      <Analytics />
     </Layout>
   );
 }
