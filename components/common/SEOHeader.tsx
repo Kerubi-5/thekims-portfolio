@@ -12,6 +12,65 @@ interface ISEO {
   twitterHandle?: string;
 }
 
+const schemaMarkup = () => {
+  //! NOTE: Works for should be changed depending on who you're working for right now
+  return {
+    __html: `{
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "John Kim A. Querobines",
+    "gender": "Male",
+    "givenName": "John Kim",
+    "familyName": "Querobines",
+    "nationality": "Filipino",
+    "jobTitle": "Registered Freelancer Web Developer",
+    "url": "https://www.thekims.dev/",
+    "email": "johnkim.querobines@gmail.com",
+    "telephone": "0927-467-8658",
+    "image": "https://www.thekims.dev/JohnKim.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/john-kim-querobines-4507521b8/",
+      "https://twitter.com/Kerubi5s/",
+      "https://github.com/Kerubi-5/"
+    ],
+    "knowsLanguage": ["HTML", "CSS", "JavaScript", "PHP"],
+    "knowsAbout": [
+      "Web Development",
+      "Front-End Development",
+      "Back-End Development",
+      "Responsive Design",
+      "SEO"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Refocus"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Polytechnic University of the Philippines",
+      "url": "https://www.pup.edu.ph/",
+      "alumni": [
+        {
+          "@type": "Person",
+          "name": "John Kim A. Querobines",
+          "sameAs": "https://www.linkedin.com/in/john-kim-querobines-4507521b8/"
+        }
+      ]
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Cum Laude",
+      "description": "Latin honor received from Polytechnic University of the Philippines",
+      "educationalLevel": "College",
+      "recognizedBy": {
+        "@type": "EducationalOrganization",
+        "name": "Polytechnic University of the Philippines"
+      }
+    }
+  }`,
+  };
+};
+
 const DOMAIN = "https://www.thekims.dev";
 const DEFAULT_OG_IMAGE = "https://www.thekims.dev/assets/og-image.png";
 
@@ -87,6 +146,13 @@ const SEOHeader = ({
         name="twitter:image:alt"
         content={title}
       ></meta>
+
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={schemaMarkup()}
+        key="product-jsonld"
+      />
     </Head>
   );
 };
