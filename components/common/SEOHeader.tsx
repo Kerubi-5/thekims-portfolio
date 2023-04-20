@@ -10,6 +10,7 @@ interface ISEO {
   ogImage?: string;
   ogType?: string;
   twitterHandle?: string;
+  mainPage?: boolean;
 }
 
 const schemaMarkup = () => {
@@ -84,6 +85,7 @@ const SEOHeader = ({
   ogImage = DEFAULT_OG_IMAGE,
   ogType = "website",
   twitterHandle = "@Kerubi5s",
+  mainPage = false,
 }: ISEO) => {
   const slug = canonical?.toLowerCase();
 
@@ -148,11 +150,13 @@ const SEOHeader = ({
       ></meta>
 
       {/* Schema Markup */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={schemaMarkup()}
-        key="product-jsonld"
-      />
+      {mainPage && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={schemaMarkup()}
+          key="product-jsonld"
+        />
+      )}
     </Head>
   );
 };

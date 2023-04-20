@@ -97,7 +97,7 @@ const Home = () => {
 
   return (
     <Container>
-      <SEOHeader />
+      <SEOHeader mainPage={true} />
       <header>
         <div className="py-10 lg:pb-[90px] lg:pt-[80px]">
           <p className="text-base text-gray-700 dark:text-gray-400 mb-5 font-mono">
