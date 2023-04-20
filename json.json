@@ -1,0 +1,49 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "John Kim A. Querobines",
+  "jobTitle": "Registered Freelancer Web Developer",
+  "url": "https://www.thekims.dev/",
+  "email": "johnkim.querobines@gmail.com",
+  "telephone": "0927-467-8658",
+  "image": "https://www.thekims.dev/JohnKim.png",
+  "sameAs": [
+    "https://www.linkedin.com/in/john-kim-querobines-4507521b8/",
+    "https://twitter.com/Kerubi5s/",
+    "https://github.com/Kerubi-5/"
+  ],
+  "knowsLanguage": ["HTML", "CSS", "JavaScript", "PHP"],
+  "knowsAbout": [
+    "Web Development",
+    "Front-End Development",
+    "Back-End Development",
+    "Responsive Design",
+    "SEO"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Refocus"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Polytechnic University of the Philippines",
+    "url": "https://www.pup.edu.ph/",
+    "alumni": [
+      {
+        "@type": "Person",
+        "name": "John Kim A. Querobines",
+        "sameAs": "https://www.linkedin.com/in/john-kim-querobines-4507521b8/"
+      }
+    ]
+  },
+  "award": {
+    "@type": "Achievement",
+    "name": "Cum Laude",
+    "category": "Latin Honors",
+    "issuer": {
+      "@type": "EducationalOrganization",
+      "name": "Polytechnic University of the Philippines",
+      "url": "https://www.pup.edu.ph/"
+    }
+  }
+}
