@@ -1,6 +1,17 @@
 {
-  "name": "portfolio-blog",
+  "name": "thekims-portfolio",
   "version": "0.1.0",
+  "author": {
+    "name": "John Kim A. Querobines",
+    "email": "jkim.querobines@gmail.com",
+    "url": "https://www.thekims.dev/"
+  },
+  "keywords": [
+    "Portfolio",
+    "Project",
+    "Web Developer"
+  ],
+  "description": "The Portfolio Project of John Kim",
   "private": true,
   "scripts": {
     "dev": "next dev",
