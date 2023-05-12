@@ -1,8 +1,8 @@
 import { Layout, SEOHeader } from "components/common";
+import WorkCard from "components/post/WorkCard";
 import { Container } from "components/ui";
 import { getAllWorks } from "hooks/work/get-all-works";
 import { InferGetStaticPropsType } from "next";
-import Image from "next/image";
 
 export const getStaticProps = async () => {
   const works = await getAllWorks();
@@ -18,41 +18,8 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const WorkItem = () => {
     return works.map((item, index) => {
       return (
-        <li key={item.link} className="break-inside-avoid">
-          <article className="p-5 bg-slate-200 dark:bg-slate-800 rounded-sm space-y-2">
-            <div className="hidden md:block md:h-[200px]  lg:h-[250px] max-w-[533.33px] relative">
-              <Image
-                src={item.screenshot.url}
-                fill={true}
-                alt={item.screenshot.description}
-                sizes="(max-width: 1024px) 533.33px, 20vw"
-                priority={index === 1}
-                placeholder="blur"
-                blurDataURL={`${item.screenshot.url}?lqip`}
-                className="object-cover"
-              />
-            </div>
-            <div className="details max-w-[600px]">
-              <h3 className="text-purple-600 dark:text-purple-400 text-xl font-bold">
-                {item.title}
-              </h3>
-              {item.excerpt && (
-                <p className="prose dark:prose-invert">{item.excerpt}</p>
-              )}
-              {item.tags?.length > 0 && (
-                <ul className="tags flex gap-3 my-2">
-                  {item.tags.map((tag) => (
-                    <li
-                      className="bg-slate-700 text-zinc-300 dark:text-slate-900 dark:bg-zinc-300 max-w-max px-2 py-1 rounded-sm"
-                      key={tag}
-                    >
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          </article>
+        <li key={item.link}>
+          <WorkCard item={item} index={index} />
         </li>
       );
     });
@@ -73,7 +40,7 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
         </p>
       </div>
       <section>
-        <ul className="md:columns-2 lg:columns-3 space-y-5 gap-5">
+        <ul className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {WorkItem()}
         </ul>
       </section>
