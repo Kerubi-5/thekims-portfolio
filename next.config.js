@@ -12,6 +12,7 @@ const nextConfig = withOptimizedImages({
     domains: ["images.ctfassets.net"],
     formats: ["image/avif", "image/webp"],
   },
+  trailingSlash: true,
 });
 
 module.exports = nextConfig;
