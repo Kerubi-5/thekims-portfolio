@@ -31,6 +31,7 @@ const Works = ({ works }: InferGetStaticPropsType<typeof getStaticProps>) => {
         <SEOHeader
           title="The Projects of John Kim Querobines"
           description="Get inspired by John Kim A. Querobines' portfolio of stunning website creations. See how TheKims.dev can bring your online vision to life with personalized solutions that cater to your entrepreneurial needs."
+          canonical="works"
         />
         <h1 className="text-5xl bg-clip-text text-transparent primary-gradient font-bold pb-2">
           My Works

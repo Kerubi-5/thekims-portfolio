@@ -96,7 +96,7 @@ const SEOHeader = ({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords.join(",")} />
       <meta name="author" content={author} />
-      <link rel="canonical" href={`${DOMAIN}/${canonical ? slug : ""}`} />
+      <link rel="canonical" href={`${DOMAIN}/${canonical ? slug + "/" : ""}`} />
       <link rel="shortcut icon" href="/favicon.ico" />
       <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       <meta name="robots" content="index,follow" />
