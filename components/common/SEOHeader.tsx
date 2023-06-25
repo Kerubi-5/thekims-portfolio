@@ -113,7 +113,7 @@ const SEOHeader = ({
       <meta
         key="og_url"
         property="og:url"
-        content={`${DOMAIN}/${canonical ? slug : ""}`}
+        content={`${DOMAIN}/${canonical ? slug + "/" : ""}`}
       />
       <meta key="og_site_name" property="og:site_name" content={siteName} />
       <meta
