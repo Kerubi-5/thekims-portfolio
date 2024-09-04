@@ -14,3 +14,10 @@ export interface Work {
   };
   tags: [string];
 }
+
+export interface WorkPlaces {
+  title: string;
+  company: string;
+  date: string;
+  description: string[];
+}

@@ -1,100 +1,11 @@
-import { Layout, SEOHeader } from "components/common";
-import { ReactNode } from "react";
+import { Layout, Section, SEOHeader } from "components/common";
 import { Container } from "components/ui";
 import { Email, Phone, ThinkingSvg } from "components/icons";
-
-type Section = {
-  title: string;
-  description: string;
-  children: ReactNode;
-};
-
-type WorkPlaces = {
-  title: string;
-  company: string;
-  date: string;
-  description: string[];
-};
+import { WorkHistoryItem } from "components/work";
+import { getWorkPlaceList } from "hooks/work/get-work-history";
 
 const Home = () => {
-  const Section = ({ title, description, children }: Section) => {
-    return (
-      <section className="flex flex-col justify-center items-center mb-10 lg:mt-5 max-w-2xl m-auto">
-        <div className="sm:py-2 md:py-5 text-center">
-          <h2 className="hover:text-gradient">{title}</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            {description}
-          </p>
-        </div>
-        {children}
-      </section>
-    );
-  };
-
-  const RenderWorkPlaces = ({
-    title,
-    company,
-    date,
-    description,
-  }: WorkPlaces) => {
-    return (
-      <article key={title + date}>
-        <div className="mb-5">
-          <h3 className="text-lg dark:text-zinc-200 font-medium">
-            {title}{" "}
-            <span
-              title="Company"
-              aria-label="Company"
-              className="text-purple-700 dark:text-purple-400"
-            >
-              @{company}
-            </span>
-          </h3>
-          <small className="dark:text-zinc-300">{date}</small>
-        </div>
-
-        <ul className="list">
-          {description.map((desc, idx) => (
-            <li key={idx} className="dark:text-zinc-400">
-              {desc}
-            </li>
-          ))}
-        </ul>
-      </article>
-    );
-  };
-
-  const workPlaces: WorkPlaces[] = [
-    {
-      title: "Web Developer Mentor",
-      company: "Refocus",
-      date: "Jan 2023 - Present",
-      description: [
-        "Working Remotely as a Web Developer Mentor specializing in HTML, CSS, Javascript and React, here I am able to use the skills and experiences I was able to learn throughout my web development career",
-        "Participate in product development and provide product development services",
-        "Provide student counseling services via chat in Intercom",
-      ],
-    },
-    {
-      title: "Fullstack Web Developer",
-      company: "OnlineJobsPH",
-      date: "Mar 2022 - Jan 2023",
-      description: [
-        "Designed and developed a News Website using Next.js and React Emotion with Contentful as the headless CMS for a JAMStack setup architecture for the website",
-        "Also created a prototype for a charity website using the same stack used in the previous project",
-      ],
-    },
-    {
-      title: "Frontend Developer",
-      company: "Pragtechnologies Corp",
-      date: "Aug 2022 - July 2022",
-      description: [
-        "Trained in using Next.js, React Typescript, Tailwind, Graphql and Shopify",
-        "Developed a Next.js project with Typescript and Shopify GraphQL together as a primary requirement to finish the internship programme",
-        "Collaborated with a team of 4 to create the prototype of the pragtech website using Next.js with Typescript and Gitlab as a source control for the team",
-      ],
-    },
-  ];
+  const workPlaces = getWorkPlaceList();
 
   return (
     <Container>
@@ -144,7 +55,7 @@ const Home = () => {
       </Section>
       <Section title="Where I've worked" description="Places I've worked on">
         <div className="workExperiences space-y-5 mt-5">
-          {workPlaces.map(RenderWorkPlaces)}
+          {workPlaces.map(WorkHistoryItem)}
         </div>
       </Section>
       <Section title="What's the move?" description="Drop me a line!">
