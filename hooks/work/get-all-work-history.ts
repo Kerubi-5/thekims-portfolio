@@ -2,9 +2,20 @@ import { WorkPlaces } from "hooks/types";
 
 const workPlaces: WorkPlaces[] = [
   {
+    title: "Frontend Developer",
+    company: "BaossDev",
+    date: "Jul 2023 - Present",
+    description: [
+      "Develop scalable components using React.js and TypeScript, while adapting to other frameworks like AureliaJS and Electron as needed.",
+      "Worked with a large-scale Nx monorepo and utilize Storybook for developing and documenting UI components with a focus on consistency and reusability.",
+      "Lead CI/CD pipeline development and project management, especially in startup environments, ensuring efficient deployments and successful project delivery",
+      "Collaborate with a large team, mentor peers, write technical documentation, and lead onboarding initiatives to help team members efficiently navigate and complete tasks.",
+    ],
+  },
+  {
     title: "Web Developer Mentor",
     company: "Refocus",
-    date: "Jan 2023 - Present",
+    date: "Jan 2023 - Sept 2023",
     description: [
       "Working Remotely as a Web Developer Mentor specializing in HTML, CSS, Javascript and React, here I am able to use the skills and experiences I was able to learn throughout my web development career",
       "Participate in product development and provide product development services",

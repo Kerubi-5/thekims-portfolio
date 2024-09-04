@@ -2,7 +2,7 @@ import { Layout, Section, SEOHeader } from "components/common";
 import { Container } from "components/ui";
 import { Email, Phone, ThinkingSvg } from "components/icons";
 import { WorkHistoryItem } from "components/work";
-import { getWorkPlaceList } from "hooks/work/get-work-history";
+import { getWorkPlaceList } from "hooks/work/get-all-work-history";
 
 const Home = () => {
   const workPlaces = getWorkPlaceList();
