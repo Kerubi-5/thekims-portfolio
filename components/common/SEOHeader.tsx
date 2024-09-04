@@ -44,7 +44,7 @@ const schemaMarkup = () => {
     ],
     "worksFor": {
       "@type": "Organization",
-      "name": "Refocus"
+      "name": "BaossDev"
     },
     "alumniOf": {
       "@type": "EducationalOrganization",

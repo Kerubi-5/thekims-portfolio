@@ -26,6 +26,8 @@ const ScrollToTop = () => {
 
   return (
     <button
+      name="scroll-to-top"
+      aria-label="scroll-to-top"
       className={`z-[1000] bottom-5 right-5 p-3 rounded-full shadow-xl bg-purple-400 hover:bg-purple-600 text-white hover:scale-105 transition-all ${
         isVisible ? "fixed" : "hidden"
       }`}
