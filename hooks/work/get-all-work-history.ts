@@ -13,6 +13,16 @@ const workPlaces: WorkPlaces[] = [
     ],
   },
   {
+    title: "Wordpress and Gatsby Developer",
+    company: "LevelUp Outsourcing Agency",
+    date: "June 2022 - Nov 2023",
+    description: [
+      "Developed, customized, and optimized two dynamic WordPress websites for separate clients, ensuring responsive design and seamless user experience.",
+      "Created and maintained a high-performance website using the Gatsby.js framework, focusing on modern, fast-loading web architecture and smooth user interaction.",
+      "Spearheaded process automation using Make.com formerly known as Integromat, webhooks, and integration tools to optimize client business operations, by envisioning and implementing technical solutions that streamlined workflows and increased efficiency.",
+    ],
+  },
+  {
     title: "Web Developer Mentor",
     company: "Refocus",
     date: "Jan 2023 - Sept 2023",
