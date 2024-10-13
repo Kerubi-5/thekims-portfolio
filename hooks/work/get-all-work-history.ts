@@ -34,7 +34,7 @@ const workPlaces: WorkPlaces[] = [
   {
     title: "Frontend Developer",
     company: "Pragtechnologies Corp",
-    date: "June 2022 - August 2022",
+    date: "June 2022 - Aug 2022",
     description: [
       "Trained in using Next.js, React Typescript, Tailwind, Graphql and Shopify",
       "Developed a Next.js project with Typescript and Shopify GraphQL together as a primary requirement to finish the internship programme",
