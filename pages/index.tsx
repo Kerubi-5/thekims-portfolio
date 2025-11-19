@@ -3,6 +3,7 @@ import { Container } from "components/ui";
 import { Email, Phone, ThinkingSvg } from "components/icons";
 import { WorkHistoryItem } from "components/work";
 import { getWorkPlaceList } from "hooks/work/get-all-work-history";
+import { DEFAULT_GIVEN_NAME } from "config/seo";
 
 const Home = () => {
   const workPlaces = getWorkPlaceList();
@@ -15,16 +16,16 @@ const Home = () => {
           <p className="text-base text-gray-700 dark:text-gray-400 mb-5 font-mono">
             Hi, my name is
           </p>
-          <h1 className="headline">John Kim Querobines</h1>
+          <h1 className="headline">{DEFAULT_GIVEN_NAME} Q.</h1>
           <h2 className="subheadline">
             I create high-performance websites with modern technologies and
             practices.
           </h2>
           <p className="text-base md:text-lg text-gray-700 dark:text-gray-400 max-w-[540px]">
-            I&apos;m a Registered Freelancer, Game Enthusiast, and many more...
-            I’m a web developer specializing in building (and occasionally
-            designing) exceptional digital experiences. I&apos;m currently
-            working as a frontend developer.
+            I&apos;m a Software Engineer and AI Engineer with 5+ years of experience building
+            scalable web applications and intelligent systems. I specialize in full-stack
+            development, working with Large Language Models (LLMs), and creating exceptional
+            digital experiences that solve real-world problems.
           </p>
         </div>
       </header>
