@@ -3,6 +3,13 @@ import Navbar from "./Navbar";
 import { Github, Facebook, LinkedIn, Twitter } from "components/icons";
 import ScrollToTop from "components/ui/ScrollToTop";
 import { Open_Sans } from "next/font/google";
+import {
+  SOCIAL_GITHUB,
+  SOCIAL_FACEBOOK,
+  SOCIAL_LINKEDIN,
+  SOCIAL_TWITTER,
+  CONTACT_EMAIL_DISPLAY,
+} from "config/seo";
 
 const openSans = Open_Sans({
   weight: ["400", "500", "700"],
@@ -21,22 +28,22 @@ const Layout = ({ children }: ILayout) => {
     {
       name: "Github",
       icon: Github,
-      url: "https://github.com/Kerubi-5",
+      url: SOCIAL_GITHUB,
     },
     {
       name: "Facebook",
       icon: Facebook,
-      url: "https://www.facebook.com/mr.jkimpot",
+      url: SOCIAL_FACEBOOK,
     },
     {
       name: "LinkedIn",
       icon: LinkedIn,
-      url: "https://www.linkedin.com/in/john-kim-querobines-4507521b8/",
+      url: SOCIAL_LINKEDIN,
     },
     {
       name: "Twitter",
       icon: Twitter,
-      url: "https://twitter.com/Kerubi5s",
+      url: SOCIAL_TWITTER,
     },
   ];
 
@@ -61,12 +68,12 @@ const Layout = ({ children }: ILayout) => {
         </aside>
         <aside className="z-50 md:flex flex-col gap-24 fixed -right-20 bottom-0 side hidden">
           <a
-            href="mailto:jkim.querobines@gmail.com"
+            href={`mailto:${CONTACT_EMAIL_DISPLAY}`}
             rel="noopener noreferrer"
             target="_blank"
             className="rotate-90 py-3 hover:-translate-y-1 hover:text-purple-400 transition"
           >
-            jkim.querobines@gmail.com
+            {CONTACT_EMAIL_DISPLAY}
           </a>
         </aside>
         {children}
