@@ -1,62 +1,65 @@
 # John Kim Querobines
 **Senior Frontend / Full-Stack & AI Agent Engineer**  
-Quezon City, Philippines | jkim.querobines@gmail.com  
+Quezon City, Philippines | kim@querobines.com | +63 969 190 7469  
 LinkedIn: https://www.linkedin.com/in/john-kim-q-4507521b8/ | GitHub: https://github.com/Kerubi-5 | Portfolio: https://personal-portfolio-sage-delta-47.vercel.app  
 
 ---
 
 ## Professional Summary
-Results-driven Senior Frontend & Full-Stack Engineer with 4+ years of experience building high-performance web applications, AI agent frameworks, and custom software systems. Specialized in TypeScript, Next.js, Astro, React, Python, and modern AI orchestration. Graduated Cum Laude with a BS in Information Technology (PUP 2022). Proven track record of delivering scalable web platforms and automating complex workflows for agency clients and international partners.
+Senior Full-Stack & Frontend Engineer with 4+ years of experience building and scaling high-performance web platforms serving millions of users. Proven track record leading architectural initiatives, improving system performance, and delivering measurable business impact across enterprise e-commerce, SaaS products, and agency clients. Specialized in TypeScript, Next.js, Astro, React, GraphQL, Python, and AI Agent orchestration. Graduated Cum Laude with a BS in Information Technology (PUP 2022).
 
 ---
 
 ## Technical Skills
-- **Languages & Core:** TypeScript, JavaScript (ES6+), Python, HTML5, CSS3, SASS
-- **Frontend Frameworks:** Next.js, Astro, React, Tailwind CSS, Redux Toolkit, Webpack, Vite
-- **Backend & APIs:** Node.js, Express, RESTful APIs, GraphQL, Python (FastAPI/Flask)
-- **AI & Automation:** Autonomous AI Agents, LLM Tool Integration, Prompt Engineering, Workflow Automation
-- **Tools & Infrastructure:** Git, GitHub Actions, Vercel, Docker, Linux/macOS CLI, CI/CD Pipelines
+- **Frontend:** React, Next.js, Astro, TypeScript, JavaScript (ES6+), HTML5, CSS3/Tailwind CSS, Component Libraries, Storybook
+- **Backend & APIs:** Node.js, GraphQL, REST APIs, Apollo Server, Express, Python (FastAPI/Flask)
+- **Testing & Quality:** Playwright, Cypress, Jest, React Testing Library, TestCafe
+- **Performance & Tooling:** Web Performance Optimization, Lighthouse, Nx Monorepos, GitHub Actions, CI/CD, Vercel, Contentful, WordPress
 
 ---
 
 ## Professional Experience
 
-### Baoss Dev Agency — Senior Frontend / Full-Stack & AI Engineer
+### Enterprise E-commerce Platform — Senior Full-Stack / Frontend Engineer (IC)
+*July 2023 – Present | US (Remote)*
+- Improved page load performance by 28% and reduced GraphQL API response times by 34%, driving a 12% increase in membership conversion.
+- Architected core item-level UI components and GraphQL orchestration services, increasing add-to-cart conversion by 16%.
+- Implemented GenAI-powered review summaries processing 2M+ customer reviews, increasing engagement by 44%.
+- Led implementation of flexible Pay-in-4 payment integration, driving 19% adoption among eligible users.
+- Executed end-to-end testing coverage (91%), reducing production defects by 52% and analytics payload size by 29%.
+
+### Baoss Dev Agency — Senior Frontend & AI Engineer
 *2023 – Present | Remote*
-- Architected and deployed responsive frontend interfaces and AI-driven workflow engines using Next.js, TypeScript, and Tailwind CSS.
-- Integrated custom AI agent frameworks and LLM tools to automate administrative and data processing pipelines.
-- Implemented CI/CD workflows via GitHub Actions and Vercel, reducing deployment times from 30 minutes to under 2 minutes.
+- Architected and deployed responsive frontend interfaces and AI agent execution pipelines in Next.js, TypeScript, and Python.
+- Automated workflow pipelines and reduced release cycles by setting up GitHub Actions and Vercel CI/CD.
 
 ### Alba Facilities Services Ltd. — Full-Stack Web Developer (Contract)
-*2026 – Present | Remote*
-- Architected and developed the Alba Dashboard application for facility operations and asset management using TypeScript, React, and REST APIs.
-- Streamlined data visualization and UI components, leading to faster load times and improved user accessibility across operational workflows.
+*2026 – Present | UK (Remote)*
+- Architected and developed the Alba Dashboard application for facility operations and asset management using React, TypeScript, and REST APIs.
+- Optimized data visualization components and UI performance across client operational workflows.
 
 ### Sales For Nice People (Martin Stellar) — Frontend & Tools Developer (Contract / Partner)
-*2026 – Present (Prior Engagement 2024) | Remote*
-- Re-engaged by founder in 2026 to build specialized lead generation tools, Obsidian plugins, and web infrastructure.
-- Developed content analysis algorithms and lightweight, SEO-optimized web templates in Astro and Tailwind CSS achieving 98+ Lighthouse scores.
+*2026 – Present (Prior Contract 2024) | Remote*
+- Re-engaged in 2026 by founder to build specialized lead generation tools, Obsidian plugins, and web infrastructure.
+- Engineered content analysis tools and lightweight Astro/Tailwind templates achieving 98+ Google Lighthouse performance scores.
 
 ### Yannick Jacob — Web Developer & Digital Systems Specialist
 *2024 – 2025 | Remote*
-- Architected and built the main web platform for Go Coaching Lab ([gocoachinglab.com](https://gocoachinglab.com/)) using modern web frameworks.
-- Maintained and optimized the Coaching & Mediation platform ([coachingandmediation.net](https://www.coachingandmediation.net/)), enhancing uptime and site responsiveness.
+- Architected and built the web platform for Go Coaching Lab ([gocoachinglab.com](https://gocoachinglab.com/)).
+- Maintained and optimized the Coaching & Mediation platform ([coachingandmediation.net](https://www.coachingandmediation.net/)).
 
----
+### Refocus — Web Developer Mentor
+*Jan 2023 – Sep 2023 | PH (Remote)*
+- Mentored 30+ students in React, HTML, CSS, and JavaScript; resolved 95% of technical queries within 24 hours via Intercom.
+- Improved student project completion rates by 30% and overall code quality by 25%.
 
-## Key Projects
+### Level-Up Outsourcing — WordPress & Gatsby Developer
+*Mar 2022 – Dec 2023 | Australia (Remote)*
+- Delivered custom WordPress sites and Gatsby static platforms, improving page load speeds by 45% and client traffic by 20-30%.
 
-### Atlas Operating System & KairOS
-- **Stack:** Python, TypeScript, Node.js, SQLite, REST API, CLI Tools
-- Engineered an autonomous AI operating system and task execution co-pilot designed for human-AI co-working and task automation.
-
-### Metis Knowledge Platform
-- **Stack:** Python, TypeScript, LLMs, Vector Search
-- Built a knowledge synthesis platform providing automated research summarization and decision support.
-
-### Personal Portfolio
-- **Stack:** Astro, Tailwind CSS, Vercel
-- Ultra-minimalist static portfolio achieving 100/100 Lighthouse performance scores.
+### Independent Contractor — Full-Stack Web Developer
+*Mar 2022 – Jan 2023 | Canada (Remote)*
+- Built a JAMstack news platform with Next.js and Contentful (90+ Lighthouse score, +35% SEO ranking).
 
 ---
 
@@ -64,4 +67,4 @@ Results-driven Senior Frontend & Full-Stack Engineer with 4+ years of experience
 
 ### Polytechnic University of the Philippines (PUP)
 **Bachelor of Science in Information Technology (BS IT)**  
-*Graduated Cum Laude (2018 – 2022) | Manila, Philippines*
+*Graduated Cum Laude Honors (2018 – 2022) | Manila, Philippines*
