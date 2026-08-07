@@ -28,3 +28,8 @@ npm run build
 # Preview build locally
 npm run preview
 ```
+
+
+## Live Production Deployment
+
+- **Production URL**: [https://personal-portfolio-sage-delta-47.vercel.app](https://personal-portfolio-sage-delta-47.vercel.app)
