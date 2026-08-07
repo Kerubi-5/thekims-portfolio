@@ -1,42 +1,25 @@
 {
   "name": "thekims-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": {
     "name": "John Kim A. Querobines",
     "email": "jkim.querobines@gmail.com",
-    "url": "https://www.thekims.dev/"
+    "url": "https://github.com/Kerubi-5"
   },
-  "keywords": [
-    "Portfolio",
-    "Project",
-    "Web Developer"
-  ],
-  "description": "The Portfolio Project of John Kim",
+  "description": "Personal Portfolio Website of John Kim Querobines - Fullstack Developer & AI/Agent Engineer",
+  "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@vercel/analytics": "^0.1.11",
-    "next": "^13.2.4",
-    "next-optimized-images": "^2.6.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.4",
-    "@types/node": "18.6.4",
-    "@types/react": "18.0.15",
-    "@types/react-dom": "18.0.6",
-    "autoprefixer": "^10.4.8",
-    "eslint": "8.21.0",
-    "eslint-config-next": "^13.2.4",
-    "lqip-loader": "^2.2.1",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.8",
-    "typescript": "4.7.4"
+    "@astrojs/tailwind": "^6.0.0",
+    "astro": "^5.0.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.0.0"
   }
 }

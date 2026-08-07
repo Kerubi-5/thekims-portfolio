@@ -1,0 +1,24 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import Hero from '@components/Hero.astro';
+import About from '@components/About.astro';
+import Projects from '@components/Projects.astro';
+import Experience from '@components/Experience.astro';
+import TechStack from '@components/TechStack.astro';
+import Contact from '@components/Contact.astro';
+import Footer from '@components/Footer.astro';
+---
+
+<Layout title="John Kim Querobines | Fullstack & AI Agent Engineer">
+  <Navbar />
+  <main class="flex-grow">
+    <Hero />
+    <About />
+    <Projects />
+    <Experience />
+    <TechStack />
+    <Contact />
+  </main>
+  <Footer />
+</Layout>
