@@ -1,0 +1,14 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="py-8 border-t border-slate-800/80 bg-slate-950 text-slate-500 text-xs">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div>
+      © {currentYear} John Kim Querobines. All rights reserved.
+    </div>
+    <div class="flex items-center gap-4">
+      <span>Built with <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-200 transition-colors">Astro</a> & <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-200 transition-colors">Tailwind CSS</a></span>
+    </div>
+  </div>
+</footer>

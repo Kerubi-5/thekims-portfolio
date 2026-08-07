@@ -1,0 +1,115 @@
+---
+const projects = [
+  {
+    title: 'Atlas Operating System',
+    category: 'AI Operating System & Personal Agent Stack',
+    description: 'A multi-node household & personal AI operating system that coordinates autonomous agents, task queues, knowledge retrieval, and tool execution across home and cloud infrastructure.',
+    tags: ['Python', 'TypeScript', 'FastApi', 'Multi-Agent', 'Vector DB', 'Hermes Agent'],
+    github: 'https://github.com/Kerubi-5/atlas-skills',
+    featured: true,
+  },
+  {
+    title: 'KairOS',
+    category: 'AI Agent Orchestration & Execution Engine',
+    description: 'High-throughput background execution engine and task scheduler for autonomous agent workflows, cron jobs, and real-time event-driven agent tasks.',
+    tags: ['Python', 'TypeScript', 'Docker', 'Redis', 'Vector Search', 'AsyncIO'],
+    github: 'https://github.com/Kerubi-5/kairos',
+    featured: true,
+  },
+  {
+    title: 'Metis',
+    category: 'Agentic Intelligence & Knowledge Synthesis',
+    description: 'Structured knowledge retrieval and synthesis platform combining vector search, algebraic fact stores, and multi-LLM reasoning pipelines for contextual agent memory.',
+    tags: ['Python', 'PyTorch', 'FastApi', 'SQLite', 'FTS5', 'LLM Chains'],
+    github: 'https://github.com/Kerubi-5/metis',
+    featured: true,
+  },
+  {
+    title: 'Alba Dashboard',
+    category: 'Multi-Agent Executive Control Panel',
+    description: 'Real-time executive monitoring dashboard and human-in-the-loop control interface for multi-agent system state, metrics, and task dispatching.',
+    tags: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript', 'WebSockets'],
+    github: 'https://github.com/Kerubi-5/alba-dashboard',
+    featured: true,
+  },
+  {
+    title: 'SFNP Content Analyzer & Obsidian Plugin',
+    category: 'Open Source Productivity & Analytics Tools',
+    description: 'Specialized Obsidian plugin and content cluster analysis engine for semantic content strategy and lead-magnet opportunity identification.',
+    tags: ['TypeScript', 'Obsidian API', 'Python', 'NLP'],
+    github: 'https://github.com/Kerubi-5/obsidian-lead-gen-plugin',
+    featured: false,
+  },
+];
+---
+
+<section id="projects" class="py-20 border-t border-slate-800/60 relative">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-12">
+      <div class="inline-flex items-center gap-2 text-brand-400 text-xs font-mono font-bold tracking-wider uppercase mb-2">
+        // Portfolio Showcase
+      </div>
+      <h2 class="text-3xl font-extrabold text-slate-100 tracking-tight">
+        Featured Key Projects
+      </h2>
+      <p class="text-slate-400 text-sm mt-2 max-w-xl">
+        Highlights of autonomous agent architectures, multi-agent control systems, and full-stack applications.
+      </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {projects.map((project) => (
+        <div class="group relative rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-brand-500/50 p-6 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:shadow-brand-500/5 hover:-translate-y-1">
+          <div>
+            <!-- Category Badge -->
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-xs font-mono font-semibold text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded-md border border-brand-500/20">
+                {project.category}
+              </span>
+              {project.featured && (
+                <span class="text-[10px] uppercase tracking-wider font-bold text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded border border-amber-400/20">
+                  Featured
+                </span>
+              )}
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-xl font-bold text-slate-100 group-hover:text-brand-300 transition-colors mb-2">
+              {project.title}
+            </h3>
+
+            <!-- Description -->
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              {project.description}
+            </p>
+          </div>
+
+          <div>
+            <!-- Tech Tags -->
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              {project.tags.map((tag) => (
+                <span class="text-xs font-mono text-slate-300 bg-slate-800/80 px-2.5 py-1 rounded-md border border-slate-700/50">
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            <!-- Link -->
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-xs font-semibold text-brand-400 hover:text-brand-300 transition-colors group/link"
+            >
+              <span>View Repository on GitHub</span>
+              <svg class="w-4 h-4 fill-current transition-transform group-hover/link:translate-x-1" viewBox="0 0 24 24">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 4.335 9.747 10 11.25.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.39-1.305.705-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

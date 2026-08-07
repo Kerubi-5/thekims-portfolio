@@ -1,0 +1,101 @@
+---
+const experiences = [
+  {
+    role: 'Frontend & AI Engineer',
+    company: 'NDA / Startup',
+    period: 'Jul 2023 - Present',
+    bullets: [
+      'Develop scalable UI components using React.js and TypeScript, while extending support across AureliaJS and Electron applications.',
+      'Manage large-scale Nx monorepos and utilize Storybook for building reusable, accessible component libraries.',
+      'Architect AI agent integration pipelines and LLM workflows to automate business processes and intelligent data processing.',
+      'Lead CI/CD pipeline optimization and peer mentorship across agile engineering teams.'
+    ],
+  },
+  {
+    role: 'WordPress & Gatsby Developer',
+    company: 'LevelUp Outsourcing Agency',
+    period: 'Jun 2022 - Nov 2023',
+    bullets: [
+      'Built and customized high-performance websites using Gatsby.js and WordPress for dynamic, modern web architecture.',
+      'Spearheaded workflow automation using Make.com (Integromat), webhooks, and REST APIs to streamline client operations.'
+    ],
+  },
+  {
+    role: 'Web Developer Mentor',
+    company: 'Refocus',
+    period: 'Jan 2023 - Sep 2023',
+    bullets: [
+      'Mentored students and junior developers in modern web fundamentals: HTML5, CSS3, JavaScript, React, and TypeScript.',
+      'Participated in curriculum review and provided technical guidance via interactive support channels.'
+    ],
+  },
+  {
+    role: 'Fullstack Web Developer',
+    company: 'OnlineJobsPH',
+    period: 'Mar 2022 - Jan 2023',
+    bullets: [
+      'Designed and developed news platforms using Next.js and React Emotion with Contentful headless CMS in a JAMStack architecture.',
+      'Prototyped philanthropic web platforms with modern JavaScript and responsive UI components.'
+    ],
+  },
+  {
+    role: 'Frontend Developer (Intern)',
+    company: 'Pragtechnologies Corp',
+    period: 'Jun 2022 - Aug 2022',
+    bullets: [
+      'Developed Next.js applications using TypeScript and Shopify GraphQL APIs.',
+      'Collaborated with a team of developers to prototype company web platforms.'
+    ],
+  },
+];
+---
+
+<section id="experience" class="py-20 border-t border-slate-800/60 relative">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-12">
+      <div class="inline-flex items-center gap-2 text-brand-400 text-xs font-mono font-bold tracking-wider uppercase mb-2">
+        // Career Journey
+      </div>
+      <h2 class="text-3xl font-extrabold text-slate-100 tracking-tight">
+        Work Experience
+      </h2>
+      <p class="text-slate-400 text-sm mt-2 max-w-xl">
+        Where I've delivered full-stack web applications, AI integrations, and automated workflows.
+      </p>
+    </div>
+
+    <!-- Experience Timeline -->
+    <div class="relative border-l-2 border-slate-800 ml-3 md:ml-4 space-y-10 pl-6 md:pl-8">
+      {experiences.map((exp) => (
+        <div class="relative group">
+          <!-- Timeline Bullet Point -->
+          <div class="absolute -left-[31px] md:-left-[37px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-2 border-brand-500 group-hover:scale-125 group-hover:bg-brand-500 transition-all"></div>
+
+          <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 transition-all hover:border-slate-700">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-slate-100">
+                  {exp.role}
+                </h3>
+                <div class="text-sm font-medium text-brand-400">
+                  {exp.company}
+                </div>
+              </div>
+              <span class="text-xs font-mono text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700/60 w-fit">
+                {exp.period}
+              </span>
+            </div>
+
+            <ul class="space-y-2 mt-4 text-slate-300 text-sm list-disc list-inside">
+              {exp.bullets.map((bullet) => (
+                <li class="leading-relaxed">
+                  <span class="text-slate-300">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
