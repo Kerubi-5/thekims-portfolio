@@ -38,24 +38,17 @@ Senior Full-Stack & Frontend Engineer with 4+ years of experience building and s
 - Architected and developed the Alba Dashboard application for facility operations and asset management using React, TypeScript, and REST APIs.
 - Optimized data visualization components and UI performance across client operational workflows.
 
-### Sales For Nice People (Martin Stellar) — Frontend & Tools Developer (Contract / Partner)
-*2026 – Present (Prior Contract 2024) | Remote*
-- Re-engaged in 2026 by founder to build specialized lead generation tools, Obsidian plugins, and web infrastructure.
-- Engineered content analysis tools and lightweight Astro/Tailwind templates achieving 98+ Google Lighthouse performance scores.
-
-### Yannick Jacob — Web Developer & Digital Systems Specialist
-*2024 – 2025 | Remote*
-- Architected and built the web platform for Go Coaching Lab ([gocoachinglab.com](https://gocoachinglab.com/)).
-- Maintained and optimized the Coaching & Mediation platform ([coachingandmediation.net](https://www.coachingandmediation.net/)).
+### Level-Up Outsourcing Agency — Web & Digital Systems Developer
+*Mar 2022 – Present | Australia (Remote)*
+- Delivered client-facing websites, digital platforms, and custom web applications for agency clients.
+- **Sales For Nice People (Martin Stellar)** *(2026 – Present, Prior Contract 2024)*: Re-engaged in 2026 by founder to build specialized lead generation tools, Obsidian plugins, and 98+ Lighthouse Astro templates.
+- **Yannick Jacob** *(2024 – 2025)*: Architected and built the web platform for Go Coaching Lab ([gocoachinglab.com](https://gocoachinglab.com/)) and maintained Coaching & Mediation ([coachingandmediation.net](https://www.coachingandmediation.net/)).
+- **Gatsby & Custom WordPress Systems**: Designed custom WordPress sites and Gatsby static platforms, improving page load speeds by 45% and client traffic by 20–30%.
 
 ### Refocus — Web Developer Mentor
 *Jan 2023 – Sep 2023 | PH (Remote)*
 - Mentored 30+ students in React, HTML, CSS, and JavaScript; resolved 95% of technical queries within 24 hours via Intercom.
 - Improved student project completion rates by 30% and overall code quality by 25%.
-
-### Level-Up Outsourcing — WordPress & Gatsby Developer
-*Mar 2022 – Dec 2023 | Australia (Remote)*
-- Delivered custom WordPress sites and Gatsby static platforms, improving page load speeds by 45% and client traffic by 20-30%.
 
 ### Independent Contractor — Full-Stack Web Developer
 *Mar 2022 – Jan 2023 | Canada (Remote)*
