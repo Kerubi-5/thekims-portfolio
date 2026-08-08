@@ -1,0 +1,34 @@
+---
+import MainLayout from '../../layouts/main-layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+---
+
+<MainLayout title="Writing — John Kim">
+  <main class="max-w-2xl mx-auto px-6 py-16 text-slate-800 dark:text-slate-200 font-sans leading-relaxed">
+    <header class="mb-10">
+      <a href="/" class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline mb-4 inline-block">← Back to Home</a>
+      <h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Writing</h1>
+      <p class="text-slate-600 dark:text-slate-400 mt-2">Reflections on software engineering, AI agent architectures, and team culture.</p>
+    </header>
+
+    <div class="space-y-8">
+      {posts.map((post) => (
+        <article class="group">
+          <a href={`/blog/${post.slug}`} class="block">
+            <time class="text-xs text-slate-500 dark:text-slate-400 font-mono">{post.data.date}</time>
+            <h2 class="text-xl font-semibold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mt-1">
+              {post.data.title}
+            </h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mt-2 line-clamp-2 leading-relaxed">
+              {post.data.description}
+            </p>
+          </a>
+        </article>
+      ))}
+    </div>
+  </main>
+</MainLayout>
