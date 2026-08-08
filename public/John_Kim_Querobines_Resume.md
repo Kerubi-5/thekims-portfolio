@@ -6,7 +6,7 @@ LinkedIn: https://www.linkedin.com/in/john-kim-q-4507521b8/ | GitHub: https://gi
 ---
 
 ## Professional Summary
-Senior Full-Stack & Frontend Engineer with 4+ years of experience building and scaling high-performance web platforms serving millions of users. Proven track record leading architectural initiatives, improving system performance, and delivering measurable business impact across enterprise e-commerce, SaaS products, and agency clients. Specialized in TypeScript, Next.js, Astro, React, GraphQL, Python, and AI Agent orchestration. Graduated Cum Laude with a BS in Information Technology (PUP 2022).
+Senior Full-Stack & Frontend Engineer with 4+ years of experience building and scaling high-performance web platforms serving millions of users. Proven track record leading architectural initiatives, improving system performance, and delivering measurable business impact across enterprise e-commerce, SaaS products, and agency clients at Baoss Dev Agency. Specialized in TypeScript, Next.js, Astro, React, GraphQL, Python, and AI Agent orchestration. Graduated Cum Laude with a BS in Information Technology (PUP 2022).
 
 ---
 
@@ -20,18 +20,13 @@ Senior Full-Stack & Frontend Engineer with 4+ years of experience building and s
 
 ## Professional Experience
 
-### Enterprise E-commerce Platform — Senior Full-Stack / Frontend Engineer (IC)
-*July 2023 – Present | US (Remote)*
-- Improved page load performance by 28% and reduced GraphQL API response times by 34%, driving a 12% increase in membership conversion.
-- Architected core item-level UI components and GraphQL orchestration services, increasing add-to-cart conversion by 16%.
-- Implemented GenAI-powered review summaries processing 2M+ customer reviews, increasing engagement by 44%.
-- Led implementation of flexible Pay-in-4 payment integration, driving 19% adoption among eligible users.
-- Executed end-to-end testing coverage (91%), reducing production defects by 52% and analytics payload size by 29%.
-
-### Baoss Dev Agency — Senior Frontend & AI Engineer
-*2023 – Present | Remote*
-- Architected and deployed responsive frontend interfaces and AI agent execution pipelines in Next.js, TypeScript, and Python.
-- Automated workflow pipelines and reduced release cycles by setting up GitHub Actions and Vercel CI/CD.
+### Baoss Dev Agency — Senior Full-Stack / Frontend & AI Engineer
+*July 2023 – Present | Remote*
+- Lead Full-Stack Engineer at Baoss Dev Agency, architecting web applications and AI agent execution pipelines across multiple enterprise client projects.
+- **Enterprise E-Commerce Platform**: Improved page load performance by 28% and reduced GraphQL API response times by 34%, driving a 12% increase in membership conversion.
+- **GenAI Review Summaries**: Implemented GenAI-powered review summaries processing 2M+ customer reviews, increasing review engagement by 44%.
+- **Fintech Payments Integration**: Led implementation of flexible Pay-in-4 payment integration, driving 19% adoption among eligible users.
+- **AI Agent Workflows & Quality**: Built autonomous AI agent workflows in Python and Next.js, achieving 91% testing coverage and cutting production defects by 52%.
 
 ### Alba Facilities Services Ltd. — Full-Stack Web Developer (Contract)
 *2026 – Present | UK (Remote)*
