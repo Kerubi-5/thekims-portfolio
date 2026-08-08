@@ -14,7 +14,7 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<MainLayout title={`${post.data.title} — John Kim`}>
+<MainLayout title={`${post.data.title} — John Kim`} description={post.data.description}>
   <main class="max-w-2xl mx-auto px-6 py-16 text-slate-800 dark:text-slate-200 font-sans leading-relaxed">
     <nav class="mb-8">
       <a href="/blog" class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline">← Back to Writing</a>

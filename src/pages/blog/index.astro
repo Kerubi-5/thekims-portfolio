@@ -7,7 +7,7 @@ const posts = (await getCollection('blog'))
   .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 ---
 
-<MainLayout title="Writing — John Kim">
+<MainLayout title="Writing — John Kim" description="Reflections on software engineering, AI agent architectures, and team culture.">
   <main class="max-w-2xl mx-auto px-6 py-16 text-slate-800 dark:text-slate-200 font-sans leading-relaxed">
     <header class="mb-10">
       <a href="/" class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline mb-4 inline-block">← Back to Home</a>
