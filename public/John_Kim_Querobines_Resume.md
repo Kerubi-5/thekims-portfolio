@@ -18,7 +18,7 @@ Senior Full-Stack & Frontend Engineer with 4+ years of experience building and s
 
 ---
 
-## Primary Professional Experience
+## Professional Experience
 
 ### Baoss Dev Agency — Senior Full-Stack / Frontend & AI Engineer
 *July 2023 – Present | Remote*
@@ -28,33 +28,29 @@ Senior Full-Stack & Frontend Engineer with 4+ years of experience building and s
 - **Fintech Payments Integration**: Led implementation of flexible Pay-in-4 payment integration, driving 19% adoption among eligible users.
 - **AI Agent Workflows & Quality**: Built autonomous AI agent workflows in Python and Next.js, achieving 91% testing coverage and cutting production defects by 52%.
 
----
-
-## Consulting & Contract Engagements
-
-### Alba Facilities Services Ltd. — Full-Stack Web Developer (Contract)
+### Alba Facilities Services Ltd. — Full-Stack Web Developer (Project-Based Contract)
 *2026 – Present | UK (Remote)*
-- Specialized project contract: Architected and developed the Alba Dashboard application for facility operations and asset management using React, TypeScript, and REST APIs.
+- Architected and developed the Alba Dashboard application for facility operations and asset management using React, TypeScript, and REST APIs.
 - Optimized data visualization components and UI performance across client operational workflows.
 
-### Sales For Nice People (formerly Sales Flow Coach) — Frontend & Tools Developer (Contract)
+### Sales For Nice People (formerly Sales Flow Coach / Martin Stellar) — Frontend & Tools Developer (Project-Based Contract)
 *2026 – Present (Prior Contract 2024) | Remote*
-- Advisory & build contract: Re-engaged in 2026 by founder Martin Stellar to build specialized lead generation tools, Obsidian plugins, and web infrastructure for Sales For Nice People (SFNP).
+- Re-engaged in 2026 by founder Martin Stellar to build specialized lead generation tools, Obsidian plugins, and web infrastructure for Sales For Nice People (SFNP).
 - Developed content analysis algorithms and lightweight Astro/Tailwind templates achieving 98+ Google Lighthouse performance scores (formerly Sales Flow Coach).
 
 ### Level-Up Outsourcing Agency — WordPress & Web Developer
 *Mar 2022 – Dec 2023 | Australia (Remote)*
-- Agency contract delivering client-facing websites and custom digital platforms.
+- Delivered client-facing websites and custom digital platforms.
 - **Yannick Jacob Project**: Architected and built the web platform for Go Coaching Lab ([gocoachinglab.com](https://gocoachinglab.com/)) and maintained Coaching & Mediation ([coachingandmediation.net](https://www.coachingandmediation.net/)).
 - **Gatsby & WordPress Systems**: Built custom WordPress sites and Gatsby static platforms, improving page load speeds by 45% and client site traffic by 20-30%.
 
 ### Refocus — Web Developer Mentor
 *Jan 2023 – Sep 2023 | PH (Remote)*
-- Part-time mentorship: Mentored 30+ students in React, HTML, CSS, and JavaScript; resolved 95% of technical queries within 24 hours via Intercom.
+- Mentored 30+ students in React, HTML, CSS, and JavaScript; resolved 95% of technical queries within 24 hours via Intercom.
 
 ### Independent Contractor — Full-Stack Web Developer
 *Mar 2022 – Jan 2023 | Canada (Remote)*
-- Project-based contract: Built a JAMstack news platform with Next.js and Contentful (90+ Lighthouse score, +35% SEO ranking).
+- Built a JAMstack news platform with Next.js and Contentful (90+ Lighthouse score, +35% SEO ranking).
 
 ---
 
