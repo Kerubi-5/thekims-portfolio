@@ -1,6 +1,7 @@
 ---
 import MainLayout from '../../layouts/main-layout.astro';
 import { getCollection } from 'astro:content';
+import { createBlogPostingSchema, serializeJsonLd } from '../../../scripts/blog-jsonld.mjs';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -12,9 +13,12 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+const postURL = new URL(`/blog/${post.slug}/`, Astro.site ?? Astro.url).toString();
+const blogPostingSchema = createBlogPostingSchema({ post: post.data, url: postURL, siteUrl: Astro.site?.toString().replace(/\/$/, '') });
 ---
 
 <MainLayout title={`${post.data.title} — John Kim`} description={post.data.description}>
+  <script type="application/ld+json" set:html={serializeJsonLd(blogPostingSchema)} />
   <main class="max-w-2xl mx-auto px-6 py-16 text-slate-800 dark:text-slate-200 font-sans leading-relaxed">
     <nav class="mb-8">
       <a href="/blog" class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline">← Back to Writing</a>
