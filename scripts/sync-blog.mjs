@@ -28,8 +28,8 @@ export function parseFrontmatter(markdown) {
   return { data, body: markdown.slice(end + 4).replace(/^\n/, '') };
 }
 
-function isApproved(data) {
-  return data.published === true || ['approved', 'published'].includes(String(data.status).toLowerCase());
+function isPublished(data) {
+  return String(data.status ?? '').toLowerCase() === 'published';
 }
 
 function quote(value) {
@@ -65,7 +65,7 @@ export async function syncApprovedPosts({ source, destination, clean = false }) 
     const filename = entry.name;
     const input = await fs.readFile(path.join(source, filename), 'utf8');
     const { data, body } = parseFrontmatter(input);
-    if (!isApproved(data)) {
+    if (!isPublished(data)) {
       skipped.push(filename);
       continue;
     }
